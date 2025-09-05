@@ -21,6 +21,7 @@ export default function Home() {
   const [drawnPolygon, setDrawnPolygon] = useState<[number, number][] | null>(null);
   const [showLatencyModal, setShowLatencyModal] = useState(false);
   const [radiusMultiplier, setRadiusMultiplier] = useState<1 | 2>(1); // 1 = current, 2 = doubled
+  const [calculateOnlyMode, setCalculateOnlyMode] = useState(false);
   
   const {
     compareMode,
@@ -127,7 +128,7 @@ export default function Home() {
     }
   };
 
-  const handleFillRegion = (latencyThreshold: number, useCustomShape: boolean = false) => {
+  const handleFillRegion = (latencyThreshold: number, useCustomShape: boolean = false, calculateOnly: boolean = false) => {
     let bounds;
     
     if (useCustomShape && drawnPolygon) {
@@ -190,8 +191,13 @@ export default function Home() {
       }
     }
 
-    // Add all gridsites to the store
-    gridsites.forEach(site => addUserGridSite(site));
+    if (calculateOnly) {
+      // Just show the count without placing gridsites
+      alert(`Coverage calculation for ${latencyThreshold}ms (${radiusMultiplier === 1 ? 'Conservative' : 'Standard'} radius):\n\n${gridsites.length} GridSites required\n\nArea: ${((bounds.east - bounds.west) * (bounds.north - bounds.south)).toFixed(1)} degrees²`);
+    } else {
+      // Add all gridsites to the store
+      gridsites.forEach(site => addUserGridSite(site));
+    }
     
     setShowFillRegionModal(false);
     setIsDrawingMode(false);
@@ -467,10 +473,26 @@ export default function Home() {
                 </label>
               </div>
             </div>
+
+            {/* Calculate Only Mode Toggle */}
+            <div className="mb-4 p-3 bg-blue-50 rounded-lg">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={calculateOnlyMode}
+                  onChange={(e) => setCalculateOnlyMode(e.target.checked)}
+                  className="w-4 h-4 text-blue-600 rounded"
+                />
+                <span className="text-sm font-medium text-blue-800">Calculate Only (No Rendering)</span>
+              </label>
+              <div className="text-xs text-blue-600 mt-1">
+                Just show the number of GridSites needed without placing them on the map
+              </div>
+            </div>
             
             <div className="space-y-3">
               <button
-                onClick={() => handleFillRegion(5)}
+                onClick={() => handleFillRegion(5, false, calculateOnlyMode)}
                 className="w-full p-3 bg-green-100 hover:bg-green-200 text-green-800 rounded-lg transition-colors text-left"
               >
                 <div className="font-medium">5ms Coverage</div>
@@ -480,7 +502,7 @@ export default function Home() {
               </button>
               
               <button
-                onClick={() => handleFillRegion(10)}
+                onClick={() => handleFillRegion(10, false, calculateOnlyMode)}
                 className="w-full p-3 bg-yellow-100 hover:bg-yellow-200 text-yellow-800 rounded-lg transition-colors text-left"
               >
                 <div className="font-medium">10ms Coverage</div>
@@ -490,7 +512,7 @@ export default function Home() {
               </button>
               
               <button
-                onClick={() => handleFillRegion(15)}
+                onClick={() => handleFillRegion(15, false, calculateOnlyMode)}
                 className="w-full p-3 bg-orange-100 hover:bg-orange-200 text-orange-800 rounded-lg transition-colors text-left"
               >
                 <div className="font-medium">15ms Coverage</div>
@@ -500,7 +522,7 @@ export default function Home() {
               </button>
               
               <button
-                onClick={() => handleFillRegion(20)}
+                onClick={() => handleFillRegion(20, false, calculateOnlyMode)}
                 className="w-full p-3 bg-red-100 hover:bg-red-200 text-red-800 rounded-lg transition-colors text-left"
               >
                 <div className="font-medium">20ms Coverage</div>
@@ -559,10 +581,26 @@ export default function Home() {
                 </label>
               </div>
             </div>
+
+            {/* Calculate Only Mode Toggle */}
+            <div className="mb-4 p-3 bg-blue-50 rounded-lg">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={calculateOnlyMode}
+                  onChange={(e) => setCalculateOnlyMode(e.target.checked)}
+                  className="w-4 h-4 text-blue-600 rounded"
+                />
+                <span className="text-sm font-medium text-blue-800">Calculate Only (No Rendering)</span>
+              </label>
+              <div className="text-xs text-blue-600 mt-1">
+                Just show the number of GridSites needed without placing them on the map
+              </div>
+            </div>
             
             <div className="space-y-3">
               <button
-                onClick={() => handleFillRegion(5, true)}
+                onClick={() => handleFillRegion(5, true, calculateOnlyMode)}
                 className="w-full p-3 bg-green-100 hover:bg-green-200 text-green-800 rounded-lg transition-colors text-left"
               >
                 <div className="font-medium">5ms Coverage</div>
@@ -572,7 +610,7 @@ export default function Home() {
               </button>
               
               <button
-                onClick={() => handleFillRegion(10, true)}
+                onClick={() => handleFillRegion(10, true, calculateOnlyMode)}
                 className="w-full p-3 bg-yellow-100 hover:bg-yellow-200 text-yellow-800 rounded-lg transition-colors text-left"
               >
                 <div className="font-medium">10ms Coverage</div>
@@ -582,7 +620,7 @@ export default function Home() {
               </button>
               
               <button
-                onClick={() => handleFillRegion(15, true)}
+                onClick={() => handleFillRegion(15, true, calculateOnlyMode)}
                 className="w-full p-3 bg-orange-100 hover:bg-orange-200 text-orange-800 rounded-lg transition-colors text-left"
               >
                 <div className="font-medium">15ms Coverage</div>
@@ -592,7 +630,7 @@ export default function Home() {
               </button>
               
               <button
-                onClick={() => handleFillRegion(20, true)}
+                onClick={() => handleFillRegion(20, true, calculateOnlyMode)}
                 className="w-full p-3 bg-red-100 hover:bg-red-200 text-red-800 rounded-lg transition-colors text-left"
               >
                 <div className="font-medium">20ms Coverage</div>
