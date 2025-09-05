@@ -1,0 +1,2591 @@
+[
+  {
+    "id": "2323-bryan-street-dfw10",
+    "name": "2323 Bryan Street (DFW10)",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "2323 Bryan Street, Dallas, TX 75201",
+    "lat": 32.787249,
+    "lon": -96.794169,
+    "pricing": {
+      "usd_per_kw_month": 144.43
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "h5colo-inc",
+    "name": "H5Colo Inc.",
+    "type": "colo",
+    "operator": "H5 Colo Inc.",
+    "address": "12712 Park Central Dr, Dallas, TX 75251",
+    "lat": 32.921488,
+    "lon": -96.776444,
+    "pricing": {
+      "usd_per_kw_month": 168.12
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "8435-stemmons-freeway-dfw36",
+    "name": "8435 Stemmons Freeway (DFW36)",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "8435 Stemmons Freeway, Dallas, TX 75247",
+    "lat": 32.827174,
+    "lon": -96.874049,
+    "pricing": {
+      "usd_per_kw_month": 163.54
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "1232-alma-road-dfw16",
+    "name": "1232 Alma Road (DFW16)",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "1232 Alma Road, Richardson, TX 75081",
+    "lat": 32.96609,
+    "lon": -96.715705,
+    "pricing": {
+      "usd_per_kw_month": 154.8
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "4025-midway-rd-dfw11",
+    "name": "4025 Midway Rd (DFW11)",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "4025 Midway Rd, Carrollton, TX 75007",
+    "lat": 33.02173,
+    "lon": -96.84484,
+    "pricing": {
+      "usd_per_kw_month": 141.44
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "centersquare---dallas-dfw3-a",
+    "name": "Centersquare - Dallas DFW3-A",
+    "type": "colo",
+    "operator": "Centersquare",
+    "address": "11830 Webb Chapel Rd., Dallas, TX 75234",
+    "lat": 32.912053,
+    "lon": -96.870634,
+    "pricing": {
+      "usd_per_kw_month": 191.22
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "850-e-collins-boulevard-dfw28",
+    "name": "850 E. Collins Boulevard (DFW28)",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "850 E. Collins Boulevard, Richardson, TX 75081",
+    "lat": 32.967373,
+    "lon": -96.713141,
+    "pricing": {
+      "usd_per_kw_month": 164.17
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "900-quality-way-dfw17",
+    "name": "900 Quality Way (DFW17)",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "900 Quality Way, Richardson, TX 75081",
+    "lat": 32.966376,
+    "lon": -96.713354,
+    "pricing": {
+      "usd_per_kw_month": 148.3
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "1210-integrity-drive-dfw18",
+    "name": "1210 Integrity Drive (DFW18)",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "1210 Integrity Drive, Richardson, TX 75081",
+    "lat": 32.964995,
+    "lon": -96.711949,
+    "pricing": {
+      "usd_per_kw_month": 165.89
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "centersquare---dallas-dfw2-a",
+    "name": "Centersquare - Dallas DFW2-A",
+    "type": "colo",
+    "operator": "Centersquare",
+    "address": "900 Guardians Way, Dallas, TX 75013",
+    "lat": 33.09514,
+    "lon": -96.683801,
+    "pricing": {
+      "usd_per_kw_month": 181.77
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "1215-integrity-drive-dfw25",
+    "name": "1215 Integrity Drive (DFW25)",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "1215 Integrity Drive, Richardson, TX 75081",
+    "lat": 32.96489,
+    "lon": -96.715715,
+    "pricing": {
+      "usd_per_kw_month": 157.52
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "cologix-dal1",
+    "name": "Cologix DAL1",
+    "type": "colo",
+    "operator": "Cologix",
+    "address": "1950 N. Stemmons Fwy, Dallas, TX 75207",
+    "lat": 32.800985,
+    "lon": -96.819519,
+    "pricing": {
+      "usd_per_kw_month": 177.34
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "cologix-dal2",
+    "name": "Cologix DAL2",
+    "type": "colo",
+    "operator": "Cologix",
+    "address": "1950 North Stemmons Freeway, Dallas, TX 75207",
+    "lat": 32.800985,
+    "lon": -96.819519,
+    "pricing": {
+      "usd_per_kw_month": 182.41
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "cologix-dal3",
+    "name": "Cologix DAL3",
+    "type": "colo",
+    "operator": "Cologix",
+    "address": "1950 North Stemmons Freeway, Dallas, TX 75207",
+    "lat": 32.800985,
+    "lon": -96.819519,
+    "pricing": {
+      "usd_per_kw_month": 186.8
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "stream-dc-dfw-vii---garland",
+    "name": "Stream DC DFW VII - Garland",
+    "type": "colo",
+    "operator": "Stream Data Centers",
+    "address": "1813 Lookout Drive, Garland, TX 75044",
+    "lat": 32.983539,
+    "lon": -96.654027,
+    "pricing": {
+      "usd_per_kw_month": 147.71
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "950-e-collins-boulevard-dfw29",
+    "name": "950 E. Collins Boulevard (DFW29)",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "950 E. Collins Boulevard, Richardson, TX 75081",
+    "lat": 32.967336,
+    "lon": -96.710659,
+    "pricing": {
+      "usd_per_kw_month": 168.51
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "907-security-row-dfw35",
+    "name": "907 Security Row (DFW35)",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "907 Security Row, Richardson, TX 75081",
+    "lat": 32.965033,
+    "lon": -96.711949,
+    "pricing": {
+      "usd_per_kw_month": 149.03
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "hivelocity---dallas-1",
+    "name": "Hivelocity - Dallas 1",
+    "type": "colo",
+    "operator": "Hivelocity",
+    "address": "1515 Round Table Dr, Dallas, TX 75247",
+    "lat": 32.83803,
+    "lon": -96.878668,
+    "pricing": {
+      "usd_per_kw_month": 204.21
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "flexential-dallas---downtown-data-center",
+    "name": "Flexential Dallas - Downtown Data Center",
+    "type": "colo",
+    "operator": "Flexential",
+    "address": "1950 Stemmons Freeway, Dallas, TX 75207",
+    "lat": 32.800985,
+    "lon": -96.819519,
+    "pricing": {
+      "usd_per_kw_month": 208.67
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "2440-marsh-lane-dfw12",
+    "name": "2440 Marsh Lane (DFW12)",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "2440 Marsh Lane, Carrollton, TX 75006",
+    "lat": 32.979977,
+    "lon": -96.853498,
+    "pricing": {
+      "usd_per_kw_month": 147.58
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "flexential-dallas---plano-data-center",
+    "name": "Flexential Dallas - Plano Data Center",
+    "type": "colo",
+    "operator": "Flexential",
+    "address": "3500 E Plano Pkwy, Plano, TX 75074",
+    "lat": 33.007333,
+    "lon": -96.66651,
+    "pricing": {
+      "usd_per_kw_month": 205.77
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "904-quality-way-dfw21",
+    "name": "904 Quality Way (DFW21)",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "904 Quality Way, Richardson, TX 75081",
+    "lat": 32.966325,
+    "lon": -96.711187,
+    "pricing": {
+      "usd_per_kw_month": 144.63
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "908-quality-way-dfw20",
+    "name": "908 Quality Way (DFW20)",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "908 Quality Way, Richardson, TX 75081",
+    "lat": 32.966367,
+    "lon": -96.711339,
+    "pricing": {
+      "usd_per_kw_month": 163.55
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "4849-alpha-road-dfw14",
+    "name": "4849 Alpha Road (DFW14)",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "4849 Alpha Road, Dallas, TX 75244",
+    "lat": 32.933889,
+    "lon": -96.827962,
+    "pricing": {
+      "usd_per_kw_month": 154.44
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "flexential-dallas---richardson-data-center",
+    "name": "Flexential Dallas - Richardson Data Center",
+    "type": "colo",
+    "operator": "Flexential",
+    "address": "3010 Waterview Parkway, Richardson, TX 75080",
+    "lat": 32.994437,
+    "lon": -96.752769,
+    "pricing": {
+      "usd_per_kw_month": 190.15
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "2501-s-state-highway-121-dfw26",
+    "name": "2501 S. State Highway 121 (DFW26)",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "2501 S. State Highway 121, Lewisville, TX 75056",
+    "lat": 33.007343,
+    "lon": -96.993601,
+    "pricing": {
+      "usd_per_kw_month": 152.78
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "datacenter-park---dallas",
+    "name": "Datacenter Park - Dallas",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "900-908 Quality Way, Richardson, TX 75081",
+    "lat": 32.96676,
+    "lon": -96.711325,
+    "pricing": {
+      "usd_per_kw_month": 191.23
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "stream-dc-dfw-viii---wilmer",
+    "name": "Stream DC DFW-VIII - Wilmer",
+    "type": "colo",
+    "operator": "Stream Data Centers",
+    "address": "60 Sunrise Road, Wilmer, TX 75146",
+    "lat": 32.589228,
+    "lon": -96.704991,
+    "pricing": {
+      "usd_per_kw_month": 160.29
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "digital-realty-garland-campus",
+    "name": "Digital Realty Garland Campus",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "1702 1702 W Campbell Rd / 1502-1505 Ferris Rd, Garland, TX 75044",
+    "lat": 32.97759,
+    "lon": -96.65205,
+    "pricing": {
+      "usd_per_kw_month": 186.59
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "1702-w-campbell-rd",
+    "name": "1702 W Campbell Rd",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "1702 W Campbell Rd, Garland, TX 75044",
+    "lat": 32.97759,
+    "lon": -96.65205,
+    "pricing": {
+      "usd_per_kw_month": 161.58
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "1502-ferris-rd",
+    "name": "1502 Ferris Rd",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "1502 Ferris Rd, Garland, TX 75044",
+    "lat": 32.975186,
+    "lon": -96.648664,
+    "pricing": {
+      "usd_per_kw_month": 166.69
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "1505-ferris-rd",
+    "name": "1505 Ferris Rd",
+    "type": "colo",
+    "operator": "Digital Realty",
+    "address": "1505 Ferris Rd, Garland, TX 75044",
+    "lat": 32.972759,
+    "lon": -96.650872,
+    "pricing": {
+      "usd_per_kw_month": 170.38
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "ntt-dallas-tx1",
+    "name": "NTT Dallas TX1",
+    "type": "colo",
+    "operator": "NTT DATA, Inc.",
+    "address": "2008 Lookout Drive, Garland, TX 75044",
+    "lat": 32.980635,
+    "lon": -96.65821,
+    "pricing": {
+      "usd_per_kw_month": 186.06
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "cyrusone-dfw1---carrollton",
+    "name": "CyrusOne DFW1 - Carrollton",
+    "type": "colo",
+    "operator": "CyrusOne Data Centers",
+    "address": "1649 Frankfort Road West, Carrollton, TX 75007",
+    "lat": 32.992086,
+    "lon": -96.930389,
+    "pricing": {
+      "usd_per_kw_month": 195.94
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "prime-dallas-data-center-campus",
+    "name": "Prime Dallas Data Center Campus",
+    "type": "colo",
+    "operator": "Prime Data Centers",
+    "address": "1515 Round Table, Dallas, TX 75247",
+    "lat": 32.83803,
+    "lon": -96.878668,
+    "pricing": {
+      "usd_per_kw_month": 205.14
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "cyrusone-dfw3---allen",
+    "name": "CyrusOne DFW3 - Allen",
+    "type": "colo",
+    "operator": "CyrusOne Data Centers",
+    "address": "2300 Chelsea Blvd, Allen, TX 75013",
+    "lat": 33.13852,
+    "lon": -96.65995,
+    "pricing": {
+      "usd_per_kw_month": 180.82
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "irving-tx-dallas-texas",
+    "name": "IRVING-TX (Dallas, Texas)",
+    "type": "colo",
+    "operator": "Cloudnium LLC.",
+    "address": "6001 W Campus Circle, Irving, TX 75063",
+    "lat": 32.890735,
+    "lon": -96.987069,
+    "pricing": {
+      "usd_per_kw_month": 176.82
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "equinix-da1",
+    "name": "Equinix DA1",
+    "type": "colo",
+    "operator": "Equinix",
+    "address": "1950 North Stemmons Freeway, Dallas, TX 75207",
+    "lat": 32.800985,
+    "lon": -96.819519,
+    "pricing": {
+      "usd_per_kw_month": 186.57
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "cyrusone-dfw2---lewsiville",
+    "name": "CyrusOne DFW2 - Lewsiville",
+    "type": "colo",
+    "operator": "CyrusOne Data Centers",
+    "address": "2501 S. State Hwy 121 Business, Lewisville, TX 75067",
+    "lat": 33.007343,
+    "lon": -96.993601,
+    "pricing": {
+      "usd_per_kw_month": 203.95
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "equinix-da6",
+    "name": "Equinix DA6",
+    "type": "colo",
+    "operator": "Equinix",
+    "address": "1950 North Stemmons Freeway, Dallas, TX 75207",
+    "lat": 32.800985,
+    "lon": -96.819519,
+    "pricing": {
+      "usd_per_kw_month": 181.79
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "databank-dfw1---downtown-dallas",
+    "name": "DataBank DFW1 - Downtown Dallas",
+    "type": "colo",
+    "operator": "DataBank",
+    "address": "400 S Akard St, Dallas, TX 75202",
+    "lat": 32.77831,
+    "lon": -96.798634,
+    "pricing": {
+      "usd_per_kw_month": 194.66
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "corespace-dallas-data-center",
+    "name": "CoreSpace Dallas Data Center",
+    "type": "colo",
+    "operator": "CoreSpace, Inc.",
+    "address": "7505 John W Carpenter Freeway, Dallas, TX 75247",
+    "lat": 32.817575,
+    "lon": -96.872948,
+    "pricing": {
+      "usd_per_kw_month": 194.11
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "alpha-data-center",
+    "name": "Alpha Data Center",
+    "type": "colo",
+    "operator": "M&A Technology Inc.",
+    "address": "4407 Alpha Road, Dallas, TX 75244",
+    "lat": 32.933435,
+    "lon": -96.834489,
+    "pricing": {
+      "usd_per_kw_month": 187.52
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "tierpoint-dallas-allen",
+    "name": "Tierpoint Dallas-Allen",
+    "type": "colo",
+    "operator": "TierPoint",
+    "address": "820 Allen Commerce Parkway, Allen, TX 75013",
+    "lat": 33.138624,
+    "lon": -96.657385,
+    "pricing": {
+      "usd_per_kw_month": 197.5
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "equinix-da11",
+    "name": "Equinix DA11",
+    "type": "colo",
+    "operator": "Equinix",
+    "address": "1990 North Stemmons Freeway, Dallas, TX 75207",
+    "lat": 32.801826,
+    "lon": -96.820861,
+    "pricing": {
+      "usd_per_kw_month": 189.46
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "equinix-da2",
+    "name": "Equinix DA2",
+    "type": "colo",
+    "operator": "Equinix",
+    "address": "1950 North Stemmons Freeway, Dallas, TX 75207",
+    "lat": 32.800985,
+    "lon": -96.819519,
+    "pricing": {
+      "usd_per_kw_month": 205.49
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "prime-dallas---data-center-1",
+    "name": "Prime Dallas - Data Center 1",
+    "type": "colo",
+    "operator": "Prime Data Centers",
+    "address": "1515 Round Table, Dallas, TX 75247",
+    "lat": 32.83803,
+    "lon": -96.878668,
+    "pricing": {
+      "usd_per_kw_month": 208.19
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "tierpoint-dallas",
+    "name": "TierPoint Dallas",
+    "type": "colo",
+    "operator": "TierPoint",
+    "address": "3004 Irving Blvd, Dallas, TX 75247",
+    "lat": 32.807919,
+    "lon": -96.857292,
+    "pricing": {
+      "usd_per_kw_month": 179.57
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "evocative-dal6",
+    "name": "Evocative DAL6",
+    "type": "colo",
+    "operator": "Evocative Data Centers",
+    "address": "1221 Coit Road, Plano, TX 75075",
+    "lat": 33.015644,
+    "lon": -96.768462,
+    "pricing": {
+      "usd_per_kw_month": 203.48
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "databank-dfw2---north-dallas",
+    "name": "DataBank DFW2 - North Dallas",
+    "type": "colo",
+    "operator": "DataBank",
+    "address": "904 Quality Way, Dallas, TX 75801",
+    "lat": 32.966325,
+    "lon": -96.711187,
+    "pricing": {
+      "usd_per_kw_month": 201.16
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "tierpoint-dallas---fort-worth",
+    "name": "TierPoint Dallas - Fort Worth",
+    "type": "colo",
+    "operator": "TierPoint",
+    "address": "13701 Independence, Fort Worth, TX 76177",
+    "lat": 32.97949,
+    "lon": -97.252205,
+    "pricing": {
+      "usd_per_kw_month": 201.62
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "prime-dallas---data-center-2",
+    "name": "Prime Dallas - Data Center 2",
+    "type": "colo",
+    "operator": "Prime Data Centers",
+    "address": "1517 Round Table, Dallas, TX 75247",
+    "lat": 32.837484,
+    "lon": -96.877265,
+    "pricing": {
+      "usd_per_kw_month": 190.45
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "vazata-dallas-i",
+    "name": "VAZATA Dallas I",
+    "type": "colo",
+    "operator": "VAZATA",
+    "address": "4025 Midway Road, Carrollton, TX 75007",
+    "lat": 33.02173,
+    "lon": -96.84484,
+    "pricing": {
+      "usd_per_kw_month": 195.3
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "equinix-da3",
+    "name": "Equinix DA3",
+    "type": "colo",
+    "operator": "Equinix",
+    "address": "1950 North Stemmons Freeway, Dallas, TX 75207",
+    "lat": 32.800985,
+    "lon": -96.819519,
+    "pricing": {
+      "usd_per_kw_month": 181.31
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "aligned-dfw-01",
+    "name": "Aligned DFW-01",
+    "type": "colo",
+    "operator": "Aligned Data Centers",
+    "address": "2800 Summit Avenue, Plano, TX 75074",
+    "lat": 33.009397,
+    "lon": -96.676384,
+    "pricing": {
+      "usd_per_kw_month": 195.87
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "cogent-data-center---dallas",
+    "name": "Cogent Data Center - Dallas",
+    "type": "colo",
+    "operator": "Cogent Communications, Inc.",
+    "address": "400 S. Akard St, Dallas, TX 75202",
+    "lat": 32.77831,
+    "lon": -96.798634,
+    "pricing": {
+      "usd_per_kw_month": 192.6
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "databank-dfw5---dallas-infomart",
+    "name": "DataBank DFW5 - Dallas Infomart",
+    "type": "colo",
+    "operator": "DataBank",
+    "address": "1950 Stemmons Fwy, Dallas, TX 75207",
+    "lat": 32.800985,
+    "lon": -96.819519,
+    "pricing": {
+      "usd_per_kw_month": 197.92
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "365-data-centers---richardson",
+    "name": "365 Data Centers - Richardson",
+    "type": "colo",
+    "operator": "365 Data Centers",
+    "address": "1001 East Campbell Road, Richardson, TX 75081",
+    "lat": 32.976149,
+    "lon": -96.707491,
+    "pricing": {
+      "usd_per_kw_month": 181.9
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "vazata-mckinney",
+    "name": "VAZATA McKinney",
+    "type": "colo",
+    "operator": "VAZATA",
+    "address": "1720 Bray Central Dr, McKinney, TX 75069",
+    "lat": 33.223385,
+    "lon": -96.628474,
+    "pricing": {
+      "usd_per_kw_month": 148.85
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "scalematrix-dallas",
+    "name": "ScaleMatrix Dallas",
+    "type": "colo",
+    "operator": "ScaleMatrix",
+    "address": "820 Allen Commerce Pkwy, Allen, TX 75013",
+    "lat": 33.138624,
+    "lon": -96.657385,
+    "pricing": {
+      "usd_per_kw_month": 184.85
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "evocative-dal1",
+    "name": "Evocative DAL1",
+    "type": "colo",
+    "operator": "Evocative Data Centers",
+    "address": "2800 Summit Ave, Plano, TX 75074",
+    "lat": 33.009397,
+    "lon": -96.676384,
+    "pricing": {
+      "usd_per_kw_month": 197.11
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "provision-data-services",
+    "name": "Provision Data Services",
+    "type": "colo",
+    "operator": "Provision Data Services",
+    "address": "2020 Live Oak, Dallas, TX 75201",
+    "lat": 32.7838,
+    "lon": -96.79454,
+    "pricing": {
+      "usd_per_kw_month": 209.05
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "serverphase-data-center",
+    "name": "Serverphase Data Center",
+    "type": "colo",
+    "operator": "M&A Technology Inc.",
+    "address": "2045 Chenault Drive, Carrollton, TX 75006",
+    "lat": 32.964285,
+    "lon": -96.845472,
+    "pricing": {
+      "usd_per_kw_month": 189.97
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "databank-dfw4---dallas-empire",
+    "name": "DataBank DFW4 - Dallas Empire",
+    "type": "colo",
+    "operator": "DataBank",
+    "address": "1100 Empire Central Place, Dallas, TX 75247",
+    "lat": 32.821687,
+    "lon": -96.873693,
+    "pricing": {
+      "usd_per_kw_month": 209.54
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "rackspace-dallas-2",
+    "name": "Rackspace Dallas 2",
+    "type": "colo",
+    "operator": "Rackspace Hosting",
+    "address": "1215 Integrity Drive, Richardson, TX 75081",
+    "lat": 32.96489,
+    "lon": -96.715715,
+    "pricing": {
+      "usd_per_kw_month": 209.01
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "databank-dfw3---plano",
+    "name": "DataBank DFW3 - Plano",
+    "type": "colo",
+    "operator": "DataBank",
+    "address": "8375 Dominion Pkwy, Plano, TX 75024",
+    "lat": 33.087455,
+    "lon": -96.815293,
+    "pricing": {
+      "usd_per_kw_month": 207.3
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "databank-dfw7---dallas-lbj",
+    "name": "DataBank DFW7 - Dallas LBJ",
+    "type": "colo",
+    "operator": "DataBank",
+    "address": "6606 Lyndon B Johnson Fwy, Dallas, TX 75240",
+    "lat": 32.922935,
+    "lon": -96.791307,
+    "pricing": {
+      "usd_per_kw_month": 204.31
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "databank-dfw6---dallas-love-field",
+    "name": "DataBank DFW6 - Dallas Love Field",
+    "type": "colo",
+    "operator": "DataBank",
+    "address": "8600 Harry Hines Blvd, Dallas, TX 75235",
+    "lat": 32.83853,
+    "lon": -96.865264,
+    "pricing": {
+      "usd_per_kw_month": 192.08
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "equinix-da7",
+    "name": "Equinix DA7",
+    "type": "colo",
+    "operator": "Equinix",
+    "address": "6653 Pinecrest Dr, Plano, TX 75024",
+    "lat": 33.064892,
+    "lon": -96.81091,
+    "pricing": {
+      "usd_per_kw_month": 183.35
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "colohouse-dallas",
+    "name": "ColoHouse Dallas",
+    "type": "colo",
+    "operator": "ColoHouse",
+    "address": "1649 West Frankford Road, Dallas, TX 75007",
+    "lat": 32.992086,
+    "lon": -96.930389,
+    "pricing": {
+      "usd_per_kw_month": 198.51
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "resilience-dfw",
+    "name": "Resilience DFW",
+    "type": "colo",
+    "operator": "Overwatch Capital",
+    "address": "6815 Communications Pkwy, Plano, TX 75024",
+    "lat": 33.068992,
+    "lon": -96.833423,
+    "pricing": {
+      "usd_per_kw_month": 146.94
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "infomart-dallas",
+    "name": "Infomart Dallas",
+    "type": "colo",
+    "operator": "Equinix",
+    "address": "1950 N. Stemmons Freeway, Dallas, TX 75207",
+    "lat": 32.800985,
+    "lon": -96.819519,
+    "pricing": {
+      "usd_per_kw_month": 197.74
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "edged-dallas-fort-worth-dfw01",
+    "name": "Edged Dallas-Fort Worth DFW01",
+    "type": "colo",
+    "operator": "Edged Energy",
+    "address": "505 N Wildwood Dr, Irving, TX 75061",
+    "lat": 32.817196,
+    "lon": -96.917856,
+    "pricing": {
+      "usd_per_kw_month": 176.49
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "qts-irving-campus",
+    "name": "QTS Irving Campus",
+    "type": "colo",
+    "operator": "QTS Data Centers",
+    "address": "6431 Longhorn Drive, Irving, TX 75063",
+    "lat": 32.897062,
+    "lon": -96.982961,
+    "pricing": {
+      "usd_per_kw_month": 175.02
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "colocrossing-dfw1",
+    "name": "ColoCrossing DFW1",
+    "type": "colo",
+    "operator": "ColoCrossing",
+    "address": "3004 Irving Blvd, Dallas, TX 75247",
+    "lat": 32.807919,
+    "lon": -96.857292,
+    "pricing": {
+      "usd_per_kw_month": 167.06
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "equinix-da4",
+    "name": "Equinix DA4",
+    "type": "colo",
+    "operator": "Equinix",
+    "address": "2323 Bryan St, Dallas, TX 75201",
+    "lat": 32.787249,
+    "lon": -96.794169,
+    "pricing": {
+      "usd_per_kw_month": 178.23
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "gipnetworks-plano",
+    "name": "GIPNetworks Plano",
+    "type": "colo",
+    "operator": "Plano Data Center | Global IP Networks",
+    "address": "1009 Jupiter Rd, Plano, TX 75074",
+    "lat": 33.012485,
+    "lon": -96.683083,
+    "pricing": {
+      "usd_per_kw_month": 162.09
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "stack-infrastructure-dfw02-campus",
+    "name": "STACK Infrastructure DFW02 Campus",
+    "type": "colo",
+    "operator": "STACK INFRASTRUCTURE",
+    "address": "E Belt Line Road, Lancaster, TX 75146",
+    "lat": 32.586328,
+    "lon": -96.733971,
+    "pricing": {
+      "usd_per_kw_month": 140.34
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "vazata-dallas-ii",
+    "name": "VAZATA Dallas II",
+    "type": "colo",
+    "operator": "VAZATA",
+    "address": "2440 Marsh Lane, Carrollton, TX 75007",
+    "lat": 32.979977,
+    "lon": -96.853498,
+    "pricing": {
+      "usd_per_kw_month": 206.03
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "24-hour-data-plano",
+    "name": "24 Hour Data Plano",
+    "type": "colo",
+    "operator": "24 Hour Data",
+    "address": "811 E Plano Pkwy, Plano, TX 75074",
+    "lat": 33.008045,
+    "lon": -96.701578,
+    "pricing": {
+      "usd_per_kw_month": 195.46
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "equinix-da9",
+    "name": "Equinix DA9",
+    "type": "colo",
+    "operator": "Equinix",
+    "address": "2222 East Grauwyler Road, Irving, TX 75061",
+    "lat": 32.830237,
+    "lon": -96.912761,
+    "pricing": {
+      "usd_per_kw_month": 176.2
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "stack-infrastructure-dfw01a",
+    "name": "STACK Infrastructure DFW01A",
+    "type": "colo",
+    "operator": "STACK INFRASTRUCTURE",
+    "address": "6653 Pinecrest Dr, Plano, TX 75024",
+    "lat": 33.064892,
+    "lon": -96.81091,
+    "pricing": {
+      "usd_per_kw_month": 165.21
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "stack-infrastructure-dfw01b",
+    "name": "STACK Infrastructure DFW01B",
+    "type": "colo",
+    "operator": "STACK INFRASTRUCTURE",
+    "address": "6715 Pinecrest Dr, Plano, TX 75024",
+    "lat": 33.066687,
+    "lon": -96.811052,
+    "pricing": {
+      "usd_per_kw_month": 157.14
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "coreweave-plano",
+    "name": "CoreWeave Plano",
+    "type": "colo",
+    "operator": "CoreWeave",
+    "address": "1000 Coit Rd, Plano, TX 75075",
+    "lat": 33.014971,
+    "lon": -96.764914,
+    "pricing": {
+      "usd_per_kw_month": 169.11
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "ntt-dallas-tx3",
+    "name": "NTT Dallas TX3",
+    "type": "colo",
+    "operator": "NTT DATA, Inc.",
+    "address": "2080 Lookout Drive, Garland, TX 75044",
+    "lat": 32.984916,
+    "lon": -96.679947,
+    "pricing": {
+      "usd_per_kw_month": 185.13
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "ntt-dallas-tx4",
+    "name": "NTT Dallas TX4",
+    "type": "colo",
+    "operator": "NTT DATA, Inc.",
+    "address": "2008 Lookout Drive, Garland, TX 75044",
+    "lat": 32.980635,
+    "lon": -96.65821,
+    "pricing": {
+      "usd_per_kw_month": 179.37
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "ntt-dallas-tx2",
+    "name": "NTT Dallas TX2",
+    "type": "colo",
+    "operator": "NTT DATA, Inc.",
+    "address": "2108 Lookout Drive, Garland, TX 75044",
+    "lat": 32.984917,
+    "lon": -96.679964,
+    "pricing": {
+      "usd_per_kw_month": 190.77
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "cogent-data-center---irving",
+    "name": "Cogent Data Center - Irving",
+    "type": "colo",
+    "operator": "Cogent Communications, Inc.",
+    "address": "2511 E Grauwyler Rd, Irving, TX 75061",
+    "lat": 32.83138,
+    "lon": -96.90695,
+    "pricing": {
+      "usd_per_kw_month": 205.55
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "aligned-dfw-02",
+    "name": "Aligned DFW-02",
+    "type": "colo",
+    "operator": "Aligned Data Centers",
+    "address": "2800 Summit Avenue, Plano, TX 75074",
+    "lat": 33.009397,
+    "lon": -96.676384,
+    "pricing": {
+      "usd_per_kw_month": 204.37
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "servermania-dallas-data-center",
+    "name": "ServerMania Dallas Data Center",
+    "type": "colo",
+    "operator": "ServerMania Inc",
+    "address": "3000 Irving Blvd, Dallas, TX 75247",
+    "lat": 32.807825,
+    "lon": -96.857237,
+    "pricing": {
+      "usd_per_kw_month": 197.01
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "neutron-data-center",
+    "name": "Neutron Data Center",
+    "type": "colo",
+    "operator": "M&A Technology Inc.",
+    "address": "13616 Neutron Road, Dallas, TX 75244",
+    "lat": 32.933827,
+    "lon": -96.834481,
+    "pricing": {
+      "usd_per_kw_month": 192.06
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "epicio-dallas-data-center",
+    "name": "Epic.io Dallas Data Center",
+    "type": "colo",
+    "operator": "Epic.io",
+    "address": "1526 Viceroy Dr, Dallas, TX 75235",
+    "lat": 32.833946,
+    "lon": -96.869848,
+    "pricing": {
+      "usd_per_kw_month": 196.67
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "cogent-data-center---fort-worth",
+    "name": "Cogent Data Center - Fort Worth",
+    "type": "colo",
+    "operator": "Cogent Communications, Inc.",
+    "address": "1400 E Presidio St, Fort Worth, TX 76102",
+    "lat": 32.744838,
+    "lon": -97.314566,
+    "pricing": {
+      "usd_per_kw_month": 194.94
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "5cdc-dallas-fort-worth---dfw01",
+    "name": "5CDC Dallas-Fort Worth - DFW01",
+    "type": "colo",
+    "operator": "5C Group Inc.",
+    "address": "1201 John Burgess Dr, Fort Worth, TX 76140",
+    "lat": 32.635952,
+    "lon": -97.308736,
+    "pricing": {
+      "usd_per_kw_month": 176.08
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "enterhost-data-center",
+    "name": "Enterhost Data Center",
+    "type": "colo",
+    "operator": "Consuro Managed Technology",
+    "address": "801 Cherry Street, Fort Worth, TX 76102",
+    "lat": 32.750528,
+    "lon": -97.334542,
+    "pricing": {
+      "usd_per_kw_month": 176.26
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "stack-infrastructure-dfw02b",
+    "name": "STACK Infrastructure DFW02B",
+    "type": "colo",
+    "operator": "STACK INFRASTRUCTURE",
+    "address": "E Belt Line Road, Lancaster, TX 75146",
+    "lat": 32.586328,
+    "lon": -96.733971,
+    "pricing": {
+      "usd_per_kw_month": 152.04
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "stack-infrastructure-dfw02d",
+    "name": "STACK Infrastructure DFW02D",
+    "type": "colo",
+    "operator": "STACK INFRASTRUCTURE",
+    "address": "E Belt Line Road, Lancaster, TX 75146",
+    "lat": 32.586328,
+    "lon": -96.733971,
+    "pricing": {
+      "usd_per_kw_month": 152.01
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "stack-infrastructure-dfw02f",
+    "name": "STACK Infrastructure DFW02F",
+    "type": "colo",
+    "operator": "STACK INFRASTRUCTURE",
+    "address": "E Belt Line Road, Lancaster, TX 75146",
+    "lat": 32.586328,
+    "lon": -96.733971,
+    "pricing": {
+      "usd_per_kw_month": 142.28
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "stack-infrastructure-dfw02c",
+    "name": "STACK Infrastructure DFW02C",
+    "type": "colo",
+    "operator": "STACK INFRASTRUCTURE",
+    "address": "E Belt Line Road, Lancaster, TX 75146",
+    "lat": 32.586328,
+    "lon": -96.733971,
+    "pricing": {
+      "usd_per_kw_month": 163.47
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "stack-infrastructure-dfw02e",
+    "name": "STACK Infrastructure DFW02E",
+    "type": "colo",
+    "operator": "STACK INFRASTRUCTURE",
+    "address": "E Belt Line Road, Lancaster, TX 75146",
+    "lat": 32.586328,
+    "lon": -96.733971,
+    "pricing": {
+      "usd_per_kw_month": 167.17
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "stack-infrastructure-dfw02a",
+    "name": "STACK Infrastructure DFW02A",
+    "type": "colo",
+    "operator": "STACK INFRASTRUCTURE",
+    "address": "E Belt Line Road, Lancaster, TX 75146",
+    "lat": 32.586328,
+    "lon": -96.733971,
+    "pricing": {
+      "usd_per_kw_month": 149.21
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "stack-infrastructure-dfw01c",
+    "name": "STACK Infrastructure DFW01C",
+    "type": "colo",
+    "operator": "STACK INFRASTRUCTURE",
+    "address": "5601 W Spring Creek Pkwy, Plano, TX 75024",
+    "lat": 33.06568,
+    "lon": -96.813402,
+    "pricing": {
+      "usd_per_kw_month": 153.2
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "databank-dfw10---red-oak",
+    "name": "DataBank DFW10 - Red Oak",
+    "type": "colo",
+    "operator": "DataBank",
+    "address": "Batchler Rd & Stainback Rd, Red Oak, TX 75154",
+    "lat": 32.513473,
+    "lon": -96.728178,
+    "pricing": {
+      "usd_per_kw_month": 196.97
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "databank-dfw9---red-oak",
+    "name": "DataBank DFW9 - Red Oak",
+    "type": "colo",
+    "operator": "DataBank",
+    "address": "Batchler Rd & Stainback Rd, Red Oak, TX 75154",
+    "lat": 32.513473,
+    "lon": -96.728178,
+    "pricing": {
+      "usd_per_kw_month": 186.85
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "databank-dfw8---plano",
+    "name": "DataBank DFW8 - Plano",
+    "type": "colo",
+    "operator": "DataBank",
+    "address": "8375 Dominion Pkwy, Plano, TX 75024",
+    "lat": 33.087455,
+    "lon": -96.815293,
+    "pricing": {
+      "usd_per_kw_month": 179.77
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "qts-fort-worth-1-dc1",
+    "name": "QTS Fort Worth 1 DC1",
+    "type": "colo",
+    "operator": "QTS Data Centers",
+    "address": "14100 Park Vista Boulevard, Fort Worth, TX 76177",
+    "lat": 32.988687,
+    "lon": -97.259543,
+    "pricing": {
+      "usd_per_kw_month": 204.89
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "centersquare---dallas-dfw1",
+    "name": "Centersquare - Dallas DFW1",
+    "type": "colo",
+    "operator": "Centersquare",
+    "address": "14901 FAA Blvd, Fort Worth, TX 76155",
+    "lat": 32.832435,
+    "lon": -97.040755,
+    "pricing": {
+      "usd_per_kw_month": 191.76
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "qts-irving-dc1-and-dc2",
+    "name": "QTS Irving DC1 & DC2",
+    "type": "colo",
+    "operator": "QTS Data Centers",
+    "address": "6431 Longhorn Drive, Irving, TX 75063",
+    "lat": 32.897062,
+    "lon": -96.982961,
+    "pricing": {
+      "usd_per_kw_month": 186.31
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "tiernet-dallas-data-center",
+    "name": "Tier.Net Dallas Data Center",
+    "type": "colo",
+    "operator": "TierNet",
+    "address": "1515 Round Table Dr, Dallas, TX 75247",
+    "lat": 32.83803,
+    "lon": -96.878668,
+    "pricing": {
+      "usd_per_kw_month": 191.23
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "kdc-richardson",
+    "name": "KDC Richardson",
+    "type": "colo",
+    "operator": "KDC",
+    "address": "1510 E Lookout Dr, Richardson, TX 75082",
+    "lat": 32.984243,
+    "lon": -96.69638,
+    "pricing": {
+      "usd_per_kw_month": 164.31
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "riot-platforms-corsicana",
+    "name": "Riot Platforms Corsicana",
+    "type": "colo",
+    "operator": "Riot Platforms, Inc.",
+    "address": "6980 Farm to Market Rd 709, Corsicana, TX 75110",
+    "lat": 31.96524,
+    "lon": -96.51115,
+    "pricing": {
+      "usd_per_kw_month": 163.2
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "cogent-data-center---dallas-2",
+    "name": "Cogent Data Center - Dallas 2",
+    "type": "colo",
+    "operator": "Cogent Communications, Inc.",
+    "address": "146 Parkhouse St, Dallas, TX 75207",
+    "lat": 32.783588,
+    "lon": -96.818172,
+    "pricing": {
+      "usd_per_kw_month": 206.21
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "skybox-atlantic-station",
+    "name": "Skybox Atlantic Station",
+    "type": "colo",
+    "operator": "Skybox Datacenters",
+    "address": "2300 W Plano Pkwy, Plano, TX 75075",
+    "lat": 33.006226,
+    "lon": -96.737843,
+    "pricing": {
+      "usd_per_kw_month": 163.21
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "skybox-legacy-campus",
+    "name": "Skybox Legacy Campus",
+    "type": "colo",
+    "operator": "Skybox Datacenters",
+    "address": "75075 Plano, Dallas, TX",
+    "lat": 33.006122,
+    "lon": -96.821244,
+    "pricing": {
+      "usd_per_kw_month": 153.89
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "cyrusone-dfw10---whitney",
+    "name": "CyrusOne DFW10 - Whitney",
+    "type": "colo",
+    "operator": "CyrusOne Data Centers",
+    "address": "557 County Rd 3610, Whitney, TX 76692",
+    "lat": 31.85367,
+    "lon": -97.36422,
+    "pricing": {
+      "usd_per_kw_month": 177.59
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "consolidated-dallas",
+    "name": "Consolidated Dallas",
+    "type": "colo",
+    "operator": "Consolidated Communications",
+    "address": "400 S Akard St, Dallas, TX 75202",
+    "lat": 32.77831,
+    "lon": -96.798634,
+    "pricing": {
+      "usd_per_kw_month": 200.46
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "core-scientific-denton",
+    "name": "Core Scientific Denton",
+    "type": "colo",
+    "operator": "Core Scientific",
+    "address": "8171 Jim Christal Rd, Denton, TX 76207",
+    "lat": 33.220558,
+    "lon": -97.211271,
+    "pricing": {
+      "usd_per_kw_month": 158.28
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "skybox-powercampus-dallas",
+    "name": "Skybox PowerCampus Dallas",
+    "type": "colo",
+    "operator": "Skybox Datacenters",
+    "address": "75146 Lancaster, Dallas, TX",
+    "lat": 32.615663,
+    "lon": -96.766242,
+    "pricing": {
+      "usd_per_kw_month": 181.93
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "wowrack-dallas",
+    "name": "Wowrack Dallas",
+    "type": "colo",
+    "operator": "Wowrack",
+    "address": "4939 Reading St, Dallas, TX 75247",
+    "lat": 32.80682,
+    "lon": -96.865664,
+    "pricing": {
+      "usd_per_kw_month": 186.64
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "aligned-dfw-03",
+    "name": "Aligned DFW-03",
+    "type": "colo",
+    "operator": "Aligned Data Centers",
+    "address": "3801 Britton Rd, Mansfield, TX 76063",
+    "lat": 32.55004,
+    "lon": -97.074586,
+    "pricing": {
+      "usd_per_kw_month": 204.08
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "qts-irving-dc3",
+    "name": "QTS Irving DC3",
+    "type": "colo",
+    "operator": "QTS Data Centers",
+    "address": "6351 Longhorn Drive, Irving, TX 75063",
+    "lat": 32.894949,
+    "lon": -96.981664,
+    "pricing": {
+      "usd_per_kw_month": 178.89
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "lincoln-red-oak-campus",
+    "name": "Lincoln Red Oak Campus",
+    "type": "colo",
+    "operator": "Lincoln Rackhouse",
+    "address": "75154 Red Oak, Dallas, TX",
+    "lat": 32.506813,
+    "lon": -96.806657,
+    "pricing": {
+      "usd_per_kw_month": 157.27
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "ntt-garland-campus",
+    "name": "NTT Garland Campus",
+    "type": "colo",
+    "operator": "NTT DATA, Inc.",
+    "address": "2008-2108 Lookout Drive, Garland, TX 75044",
+    "lat": 32.98492,
+    "lon": -96.679994,
+    "pricing": {
+      "usd_per_kw_month": 176.02
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "cyrusone-dfw6---richardson",
+    "name": "CyrusOne DFW6 - Richardson",
+    "type": "colo",
+    "operator": "CyrusOne Data Centers",
+    "address": "1510 E Lookout Dr, Richardson, TX 75082",
+    "lat": 32.984243,
+    "lon": -96.69638,
+    "pricing": {
+      "usd_per_kw_month": 198.21
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "google-midlothian-data-center",
+    "name": "Google Midlothian Data Center",
+    "type": "colo",
+    "operator": "Google",
+    "address": "3800 Railport Pkwy, Midlothian, TX 76065",
+    "lat": 32.442915,
+    "lon": -97.048985,
+    "pricing": {
+      "usd_per_kw_month": 180.17
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "1000-coit-road",
+    "name": "1000 Coit Road",
+    "type": "colo",
+    "operator": "Lincoln Rackhouse",
+    "address": "1000 Coit Rd, Plano, TX 75075",
+    "lat": 33.014971,
+    "lon": -96.764914,
+    "pricing": {
+      "usd_per_kw_month": 160.44
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "psychz-dallas",
+    "name": "Psychz Dallas",
+    "type": "colo",
+    "operator": "Psychz Networks",
+    "address": "1515 Roundtable Dr, Dallas, TX 75457",
+    "lat": 32.885551,
+    "lon": -96.83699,
+    "pricing": {
+      "usd_per_kw_month": 182.33
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "databank---2323-bryan-st",
+    "name": "DataBank - 2323 Bryan St",
+    "type": "colo",
+    "operator": "DataBank",
+    "address": "2323 Bryan St, Dallas, TX 75201",
+    "lat": 32.787249,
+    "lon": -96.794169,
+    "pricing": {
+      "usd_per_kw_month": 178.31
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "cyrusone-dfw7---fort-worth",
+    "name": "CyrusOne DFW7 - Fort Worth",
+    "type": "colo",
+    "operator": "CyrusOne Data Centers",
+    "address": "Asphalt Dr, Fort Worth, TX 76179",
+    "lat": 32.90408,
+    "lon": -97.38391,
+    "pricing": {
+      "usd_per_kw_month": 196.51
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "365-data-centers---dallas",
+    "name": "365 Data Centers - Dallas",
+    "type": "colo",
+    "operator": "365 Data Centers",
+    "address": "2323 Bryan St., Dallas, TX 75201",
+    "lat": 32.787249,
+    "lon": -96.794169,
+    "pricing": {
+      "usd_per_kw_month": 197.76
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "plano-campus",
+    "name": "Plano Campus",
+    "type": "colo",
+    "operator": "Aligned Data Centers",
+    "address": "2800 Summit Avenue, Plano, TX 75074",
+    "lat": 33.009397,
+    "lon": -96.676384,
+    "pricing": {
+      "usd_per_kw_month": 164.61
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "vantage---shackelford-county",
+    "name": "Vantage - Shackelford County",
+    "type": "colo",
+    "operator": "Vantage Data Centers",
+    "address": "TX-351 & Farm to Market Road 604",
+    "lat": 31.589286,
+    "lon": -99.268694,
+    "pricing": {
+      "usd_per_kw_month": 159.32
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "qts-south-dallas-dc3",
+    "name": "QTS South Dallas DC3",
+    "type": "colo",
+    "operator": "QTS Data Centers",
+    "address": "303 Mason Rd, Lancaster, TX 75146",
+    "lat": 32.583084,
+    "lon": -96.692126,
+    "pricing": {
+      "usd_per_kw_month": 201.56
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "databank-red-oak-campus",
+    "name": "DataBank Red Oak Campus",
+    "type": "colo",
+    "operator": "DataBank",
+    "address": "Batchler Rd & Stainback Rd, Red Oak, TX 75154",
+    "lat": 32.513473,
+    "lon": -96.728178,
+    "pricing": {
+      "usd_per_kw_month": 207.58
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "qts-south-dallas-campus",
+    "name": "QTS South Dallas Campus",
+    "type": "colo",
+    "operator": "QTS Data Centers",
+    "address": "303 Mason Rd, Lancaster, TX 75146",
+    "lat": 32.583084,
+    "lon": -96.692126,
+    "pricing": {
+      "usd_per_kw_month": 181.92
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "meta-fort-worth-data-center",
+    "name": "Meta Fort Worth Data Center",
+    "type": "colo",
+    "operator": "Meta",
+    "address": "4500 Like Way, Fort Worth, TX 76177",
+    "lat": 32.9839,
+    "lon": -97.25946,
+    "pricing": {
+      "usd_per_kw_month": 187.11
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "databank-dfw11---red-oak",
+    "name": "DataBank DFW11 - Red Oak",
+    "type": "colo",
+    "operator": "DataBank",
+    "address": "Batchler Rd & Stainback Rd, Red Oak, TX 75154",
+    "lat": 32.513473,
+    "lon": -96.728178,
+    "pricing": {
+      "usd_per_kw_month": 179.92
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "qts-south-dallas-dc1",
+    "name": "QTS South Dallas DC1",
+    "type": "colo",
+    "operator": "QTS Data Centers",
+    "address": "303 Mason Rd, Lancaster, TX 75146",
+    "lat": 32.583084,
+    "lon": -96.692126,
+    "pricing": {
+      "usd_per_kw_month": 184.0
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "mobius-partners---farmers-branch",
+    "name": "Mobius Partners - Farmers Branch",
+    "type": "colo",
+    "operator": "Mobius Partners",
+    "address": "4215 N. Beltwood Pkwy, Farmers Branch, TX 75244",
+    "lat": 32.949612,
+    "lon": -96.837349,
+    "pricing": {
+      "usd_per_kw_month": 170.02
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "windstream-dallas",
+    "name": "Windstream Dallas",
+    "type": "colo",
+    "operator": "Windstream",
+    "address": "600 N Pearl St, Dallas, TX 75201",
+    "lat": 32.787031,
+    "lon": -96.795371,
+    "pricing": {
+      "usd_per_kw_month": 209.5
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "compass-red-oak---300-houston-school-rd",
+    "name": "Compass Red Oak - 300 Houston School Rd",
+    "type": "colo",
+    "operator": "Compass Datacenters",
+    "address": "300 Houston School Rd, Red Oak, TX 75154",
+    "lat": 32.53872,
+    "lon": -96.8044,
+    "pricing": {
+      "usd_per_kw_month": 147.61
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "project-annie",
+    "name": "Project Annie",
+    "type": "colo",
+    "operator": "Soluna Computing",
+    "address": "75460 Paris, Dallas, TX",
+    "lat": 33.661023,
+    "lon": -95.556331,
+    "pricing": {
+      "usd_per_kw_month": 150.93
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "databank-dfw12---red-oak",
+    "name": "DataBank DFW12 - Red Oak",
+    "type": "colo",
+    "operator": "DataBank",
+    "address": "Batchler Rd & Stainback Rd, Red Oak, TX 75154",
+    "lat": 32.513473,
+    "lon": -96.728178,
+    "pricing": {
+      "usd_per_kw_month": 200.01
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "lightedge---dallas",
+    "name": "LightEdge - Dallas",
+    "type": "colo",
+    "operator": "LightEdge",
+    "address": "2501 State Hwy 121, Lewisville, TX 75067",
+    "lat": 33.007343,
+    "lon": -96.993601,
+    "pricing": {
+      "usd_per_kw_month": 176.78
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "edged-dallas-fort-worth-dfw02",
+    "name": "Edged Dallas-Fort Worth DFW02",
+    "type": "colo",
+    "operator": "Edged Energy",
+    "address": "I-20 & Chapin School Rd, Fort Worth, TX 76126",
+    "lat": 32.865965,
+    "lon": -97.260163,
+    "pricing": {
+      "usd_per_kw_month": 188.58
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "qts-south-dallas-dc2",
+    "name": "QTS South Dallas DC2",
+    "type": "colo",
+    "operator": "QTS Data Centers",
+    "address": "303 Mason Rd, Lancaster, TX 75146",
+    "lat": 32.583084,
+    "lon": -96.692126,
+    "pricing": {
+      "usd_per_kw_month": 201.93
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "lumen-dallas",
+    "name": "Lumen Dallas",
+    "type": "colo",
+    "operator": "Lumen",
+    "address": "3180 Irving Blvd., Dallas, TX 75247",
+    "lat": 32.80703,
+    "lon": -96.868598,
+    "pricing": {
+      "usd_per_kw_month": 185.25
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "lumen-fort-worth-2",
+    "name": "Lumen Fort Worth 2",
+    "type": "colo",
+    "operator": "Lumen",
+    "address": "1101 E 9th St, Fort Worth, TX 76102",
+    "lat": 32.755465,
+    "lon": -97.321597,
+    "pricing": {
+      "usd_per_kw_month": 161.3
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "powerhouse-irving-campus",
+    "name": "PowerHouse Irving Campus",
+    "type": "colo",
+    "operator": "PowerHouse Data Centers",
+    "address": "111 Customer Way, Irving, TX 75039",
+    "lat": 32.887993,
+    "lon": -96.939656,
+    "pricing": {
+      "usd_per_kw_month": 140.32
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "logix-dallas-#1",
+    "name": "LOGIX Dallas #1",
+    "type": "colo",
+    "operator": "LOGIX FIBER NETWORKS",
+    "address": "2323 Bryan St, Dallas, TX 75201",
+    "lat": 32.787249,
+    "lon": -96.794169,
+    "pricing": {
+      "usd_per_kw_month": 203.25
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "logix-dallas-#2",
+    "name": "LOGIX Dallas #2",
+    "type": "colo",
+    "operator": "LOGIX FIBER NETWORKS",
+    "address": "2914 Taylor Street, Dallas, TX 75226",
+    "lat": 32.78136,
+    "lon": -96.780881,
+    "pricing": {
+      "usd_per_kw_month": 189.3
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "cisco-richardson-data-center",
+    "name": "Cisco Richardson Data Center",
+    "type": "colo",
+    "operator": "Cisco Systems",
+    "address": "2300 E President George Bush Hwy, Richardson, TX 75082",
+    "lat": 32.999898,
+    "lon": -96.678828,
+    "pricing": {
+      "usd_per_kw_month": 175.49
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "atos-dallas-data-center",
+    "name": "ATOS Dallas Data Center",
+    "type": "colo",
+    "operator": "Atos Group",
+    "address": "2323 Bryan Street, Dallas, TX 75201",
+    "lat": 32.787249,
+    "lon": -96.794169,
+    "pricing": {
+      "usd_per_kw_month": 191.22
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "eonix-communications-dallas",
+    "name": "Eonix Communications Dallas",
+    "type": "colo",
+    "operator": "Eonix Communications Inc",
+    "address": "1515 Round Table Drive, Dallas, TX 75207",
+    "lat": 32.83803,
+    "lon": -96.878668,
+    "pricing": {
+      "usd_per_kw_month": 186.21
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "lunavi-dallas",
+    "name": "Lunavi Dallas",
+    "type": "colo",
+    "operator": "Lunavi",
+    "address": "1950 North Stemmons, Fwy, Dallas, TX 75207",
+    "lat": 32.800985,
+    "lon": -96.819519,
+    "pricing": {
+      "usd_per_kw_month": 203.56
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "cisco-allen-data-center",
+    "name": "Cisco Allen Data Center",
+    "type": "colo",
+    "operator": "Cisco Systems",
+    "address": "2260 Chelsea Blvd, Allen, TX 75013",
+    "lat": 33.135804,
+    "lon": -96.660623,
+    "pricing": {
+      "usd_per_kw_month": 182.77
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "nocroom-dallas-colocation-and-vps",
+    "name": "NocRoom Dallas Colocation and VPS",
+    "type": "colo",
+    "operator": "NocRoom Miami Colocation VPS",
+    "address": "33004 Irving Blvd, Dallas, TX 75247",
+    "lat": 32.808066,
+    "lon": -96.860966,
+    "pricing": {
+      "usd_per_kw_month": 204.89
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "logix-fort-worth",
+    "name": "LOGIX Fort Worth",
+    "type": "colo",
+    "operator": "LOGIX FIBER NETWORKS",
+    "address": "307-309 West 7th St, Fort Worth, TX 76102",
+    "lat": 32.751058,
+    "lon": -97.331592,
+    "pricing": {
+      "usd_per_kw_month": 151.22
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "tpx-dallas-data-center",
+    "name": "TPx Dallas Data Center",
+    "type": "colo",
+    "operator": "TPx Communications",
+    "address": "717 N Harwood St, Dallas, TX 75201",
+    "lat": 32.785645,
+    "lon": -96.798174,
+    "pricing": {
+      "usd_per_kw_month": 188.85
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "synoptek---dallas-data-center",
+    "name": "Synoptek - Dallas Data Center",
+    "type": "colo",
+    "operator": "Synoptek",
+    "address": "2323 Bryan Street, Dallas, TX 75201",
+    "lat": 32.787249,
+    "lon": -96.794169,
+    "pricing": {
+      "usd_per_kw_month": 184.29
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "ibm-dal02-06",
+    "name": "IBM DAL02/06",
+    "type": "colo",
+    "operator": "IBM",
+    "address": "1333 North Stemmons Freeway, Dallas, TX 75207",
+    "lat": 32.791564,
+    "lon": -96.815311,
+    "pricing": {
+      "usd_per_kw_month": 187.0
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "ibm-dal01",
+    "name": "IBM DAL01",
+    "type": "colo",
+    "operator": "IBM",
+    "address": "1950 N. Stemmons Freeway, Dallas, TX 75207",
+    "lat": 32.800985,
+    "lon": -96.819519,
+    "pricing": {
+      "usd_per_kw_month": 208.01
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "ibm-dal07",
+    "name": "IBM DAL07",
+    "type": "colo",
+    "operator": "IBM",
+    "address": "1700 Summit Ave, Plano, TX 75074",
+    "lat": 33.00904,
+    "lon": -96.68899,
+    "pricing": {
+      "usd_per_kw_month": 179.26
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "powerhouse-irving---building-a",
+    "name": "PowerHouse Irving - Building A",
+    "type": "colo",
+    "operator": "PowerHouse Data Centers",
+    "address": "111 Customer Way, Irving, TX 75039",
+    "lat": 32.887993,
+    "lon": -96.939656,
+    "pricing": {
+      "usd_per_kw_month": 143.31
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "powerhouse-irving---building-b",
+    "name": "PowerHouse Irving - Building B",
+    "type": "colo",
+    "operator": "PowerHouse Data Centers",
+    "address": "111 Customer Way, Irving, TX 75039",
+    "lat": 32.887993,
+    "lon": -96.939656,
+    "pricing": {
+      "usd_per_kw_month": 153.65
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "powerhouse-irving---building-c",
+    "name": "PowerHouse Irving - Building C",
+    "type": "colo",
+    "operator": "PowerHouse Data Centers",
+    "address": "111 Customer Way, Irving, TX 75039",
+    "lat": 32.887993,
+    "lon": -96.939656,
+    "pricing": {
+      "usd_per_kw_month": 174.3
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "ibm-dal04",
+    "name": "IBM DAL04",
+    "type": "colo",
+    "operator": "IBM",
+    "address": "400 Akard St, Dallas, TX 75202",
+    "lat": 32.77831,
+    "lon": -96.798634,
+    "pricing": {
+      "usd_per_kw_month": 194.01
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "stack-infrastructure",
+    "name": "STACK Infrastructure",
+    "type": "colo",
+    "operator": "STACK INFRASTRUCTURE",
+    "address": "1950 N Stemmons Freeway, Dallas, TX 75207",
+    "lat": 32.800985,
+    "lon": -96.819519,
+    "pricing": {
+      "usd_per_kw_month": 153.09
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "lumen-dallas",
+    "name": "Lumen Dallas",
+    "type": "colo",
+    "operator": "Lumen",
+    "address": "1150 Regal Row, Dallas, TX 75247",
+    "lat": 32.828039,
+    "lon": -96.884456,
+    "pricing": {
+      "usd_per_kw_month": 209.73
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "qts-irving-dc5",
+    "name": "QTS Irving DC5",
+    "type": "colo",
+    "operator": "QTS Data Centers",
+    "address": "6300 Longhorn Drive, Irving, TX 75063",
+    "lat": 32.89685,
+    "lon": -96.980389,
+    "pricing": {
+      "usd_per_kw_month": 192.17
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "qts-irving-dc6",
+    "name": "QTS Irving DC6",
+    "type": "colo",
+    "operator": "QTS Data Centers",
+    "address": "6300 Longhorn Drive, Irving, TX 75063",
+    "lat": 32.89685,
+    "lon": -96.980389,
+    "pricing": {
+      "usd_per_kw_month": 177.76
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "acs-fort-worth-campus",
+    "name": "ACS Fort Worth Campus",
+    "type": "colo",
+    "operator": "Grupo ACS",
+    "address": "10059-10197 Hicks Field Rd, Fort Worth, TX 76179",
+    "lat": 32.909274,
+    "lon": -97.392568,
+    "pricing": {
+      "usd_per_kw_month": 149.32
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "acs-fort-worth---building-e",
+    "name": "ACS Fort Worth - Building E",
+    "type": "colo",
+    "operator": "Grupo ACS",
+    "address": "Hillwood Blvd, Fort Worth, TX 76179",
+    "lat": 32.855242,
+    "lon": -97.386627,
+    "pricing": {
+      "usd_per_kw_month": 140.88
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "acs-fort-worth---building-d",
+    "name": "ACS Fort Worth - Building D",
+    "type": "colo",
+    "operator": "Grupo ACS",
+    "address": "1645 Hicks Field Rd E, Fort Worth, TX 76179",
+    "lat": 32.91263,
+    "lon": -97.394456,
+    "pricing": {
+      "usd_per_kw_month": 166.86
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "lumen-fort-worth-1",
+    "name": "Lumen Fort Worth 1",
+    "type": "colo",
+    "operator": "Lumen",
+    "address": "1601 Jones Street, Fort Worth, TX 76102",
+    "lat": 32.748915,
+    "lon": -97.32405,
+    "pricing": {
+      "usd_per_kw_month": 166.84
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "acs-fort-worth---building-a",
+    "name": "ACS Fort Worth - Building A",
+    "type": "colo",
+    "operator": "Grupo ACS",
+    "address": "10121 Hicks Field Rd, Fort Worth, TX 76179",
+    "lat": 32.908795,
+    "lon": -97.39985,
+    "pricing": {
+      "usd_per_kw_month": 170.23
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "acs-fort-worth---building-b",
+    "name": "ACS Fort Worth - Building B",
+    "type": "colo",
+    "operator": "Grupo ACS",
+    "address": "10100 Hicks Field Rd, Fort Worth, TX 76179",
+    "lat": 32.907458,
+    "lon": -97.400154,
+    "pricing": {
+      "usd_per_kw_month": 172.47
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "cyrusone-dfw5---allen",
+    "name": "CyrusOne DFW5 - Allen",
+    "type": "colo",
+    "operator": "CyrusOne Data Centers",
+    "address": "2300 Chelsea Boulevard, Allen, TX 75013",
+    "lat": 33.13852,
+    "lon": -96.65995,
+    "pricing": {
+      "usd_per_kw_month": 181.63
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "ibm-dal05",
+    "name": "IBM DAL05",
+    "type": "colo",
+    "operator": "IBM",
+    "address": "4849 Alpha Rd, Dallas, TX 75244",
+    "lat": 32.933889,
+    "lon": -96.827962,
+    "pricing": {
+      "usd_per_kw_month": 206.99
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "acs-fort-worth---building-c",
+    "name": "ACS Fort Worth - Building C",
+    "type": "colo",
+    "operator": "Grupo ACS",
+    "address": "Hillwood Blvd, Fort Worth, TX 76179",
+    "lat": 32.855242,
+    "lon": -97.386627,
+    "pricing": {
+      "usd_per_kw_month": 169.44
+    },
+    "vacancy": "medium"
+  },
+  {
+    "id": "lumen-dallas-4",
+    "name": "Lumen Dallas 4",
+    "type": "colo",
+    "operator": "Lumen",
+    "address": "400 S Akrad, Dallas, TX 75202",
+    "lat": 32.77831,
+    "lon": -96.798634,
+    "pricing": {
+      "usd_per_kw_month": 178.93
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "lumen-dallas-3",
+    "name": "Lumen Dallas 3",
+    "type": "colo",
+    "operator": "Lumen",
+    "address": "1201 Main Street, Dallas, TX 75202",
+    "lat": 32.780465,
+    "lon": -96.801814,
+    "pricing": {
+      "usd_per_kw_month": 192.79
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "cyrusone-dfw4---allen",
+    "name": "CyrusOne DFW4 - Allen",
+    "type": "colo",
+    "operator": "CyrusOne Data Centers",
+    "address": "2300 Chelsea Boulevard, Allen, TX 75013",
+    "lat": 33.13852,
+    "lon": -96.65995,
+    "pricing": {
+      "usd_per_kw_month": 175.6
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "data-canopy---dallas",
+    "name": "Data Canopy - Dallas",
+    "type": "colo",
+    "operator": "Data Canopy",
+    "address": "1807 Ross Avenue, Dallas, TX 75201",
+    "lat": 32.786477,
+    "lon": -96.801132,
+    "pricing": {
+      "usd_per_kw_month": 180.45
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "lumen-dallas-2",
+    "name": "Lumen Dallas 2",
+    "type": "colo",
+    "operator": "Lumen",
+    "address": "1950 Stemmons Freeway, Dallas, TX 75207",
+    "lat": 32.800985,
+    "lon": -96.819519,
+    "pricing": {
+      "usd_per_kw_month": 197.08
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "gcp-us-south1",
+    "name": "GCP us-south1 (Dallas)",
+    "type": "cloud",
+    "operator": "Google Cloud",
+    "pricing": {
+      "cloud_gpu_hour": 3.40,
+      "egress_per_gb": 0.12
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "aws-local-zone-dal",
+    "name": "AWS Local Zone – Dallas",
+    "type": "cloud",
+    "operator": "AWS",
+    "pricing": {
+      "cloud_gpu_hour": 4.10,
+      "egress_per_gb": 0.09
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "azure-edge-dal",
+    "name": "Azure Edge/POP – Dallas",
+    "type": "cloud",
+    "operator": "Microsoft Azure",
+    "pricing": {
+      "cloud_gpu_hour": 4.00,
+      "egress_per_gb": 0.087
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "equinix-metal-dal",
+    "name": "Equinix Metal – Dallas",
+    "type": "cloud",
+    "operator": "Equinix",
+    "pricing": {
+      "cloud_gpu_hour": 3.75,
+      "egress_per_gb": 0.08
+    },
+    "vacancy": "low"
+  },
+  {
+    "id": "aws-use1",
+    "name": "AWS us-east-1 (N. Virginia)",
+    "type": "cloud",
+    "operator": "AWS",
+    "pricing": {
+      "cloud_gpu_hour": 4.10,
+      "egress_per_gb": 0.09
+    },
+    "vacancy": "low",
+    "meta": {
+      "notes": "~1,900 km from Dallas; long-haul adds material RTT."
+    }
+  },
+  {
+    "id": "aws-usw1",
+    "name": "AWS us-west-1 (N. California)",
+    "type": "cloud",
+    "operator": "AWS",
+    "pricing": {
+      "cloud_gpu_hour": 4.10,
+      "egress_per_gb": 0.09
+    },
+    "vacancy": "low",
+    "meta": {
+      "notes": "~2,400 km from Dallas."
+    }
+  },
+  {
+    "id": "aws-usw2",
+    "name": "AWS us-west-2 (Oregon)",
+    "type": "cloud",
+    "operator": "AWS",
+    "pricing": {
+      "cloud_gpu_hour": 4.10,
+      "egress_per_gb": 0.09
+    },
+    "vacancy": "low",
+    "meta": {
+      "notes": "~2,700 km from Dallas."
+    }
+  },
+  {
+    "id": "aws-usc1",
+    "name": "AWS us-east-2 (Ohio)",
+    "type": "cloud",
+    "operator": "AWS",
+    "pricing": {
+      "cloud_gpu_hour": 4.10,
+      "egress_per_gb": 0.09
+    },
+    "vacancy": "low",
+    "meta": {
+      "notes": "~1,400 km from Dallas."
+    }
+  },
+  {
+    "id": "gcp-uscentral1",
+    "name": "GCP us-central1 (Iowa)",
+    "type": "cloud",
+    "operator": "Google Cloud",
+    "pricing": {
+      "cloud_gpu_hour": 3.40,
+      "egress_per_gb": 0.12
+    },
+    "vacancy": "low",
+    "meta": {
+      "notes": "~1,200 km from Dallas."
+    }
+  },
+  {
+    "id": "gcp-useast1",
+    "name": "GCP us-east1 (S. Carolina)",
+    "type": "cloud",
+    "operator": "Google Cloud",
+    "pricing": {
+      "cloud_gpu_hour": 3.40,
+      "egress_per_gb": 0.12
+    },
+    "vacancy": "low",
+    "meta": {
+      "notes": "~1,700 km from Dallas."
+    }
+  },
+  {
+    "id": "gcp-uswest1",
+    "name": "GCP us-west1 (Oregon)",
+    "type": "cloud",
+    "operator": "Google Cloud",
+    "pricing": {
+      "cloud_gpu_hour": 3.40,
+      "egress_per_gb": 0.12
+    },
+    "vacancy": "low",
+    "meta": {
+      "notes": "~2,700 km from Dallas."
+    }
+  },
+  {
+    "id": "azure-southcentralus",
+    "name": "Azure South Central US (San Antonio)",
+    "type": "cloud",
+    "operator": "Microsoft Azure",
+    "pricing": {
+      "cloud_gpu_hour": 4.00,
+      "egress_per_gb": 0.087
+    },
+    "vacancy": "low",
+    "meta": {
+      "notes": "~400 km from Dallas."
+    }
+  },
+  {
+    "id": "azure-eastus",
+    "name": "Azure East US (Virginia)",
+    "type": "cloud",
+    "operator": "Microsoft Azure",
+    "pricing": {
+      "cloud_gpu_hour": 4.00,
+      "egress_per_gb": 0.087
+    },
+    "vacancy": "low",
+    "meta": {
+      "notes": "~1,900 km from Dallas."
+    }
+  },
+  {
+    "id": "azure-westus",
+    "name": "Azure West US (California)",
+    "type": "cloud",
+    "operator": "Microsoft Azure",
+    "pricing": {
+      "cloud_gpu_hour": 4.00,
+      "egress_per_gb": 0.087
+    },
+    "vacancy": "low",
+    "meta": {
+      "notes": "~2,400 km from Dallas."
+    }
+  }
+]

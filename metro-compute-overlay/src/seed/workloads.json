@@ -1,0 +1,164 @@
+[
+  {
+    "id": "cv-4k-streaming",
+    "name": "4K CV streaming",
+    "latencyWeights": {
+      "load_balancer": 1,
+      "tls_handshake": 1,
+      "ecs_eks_orchestration": 0.7,
+      "gpu_cold_start": 0.4,
+      "model_gpu_load": 0.7,
+      "queueing_multitenant": 0.8,
+      "noisy_neighbor": 0.6,
+      "data_retrieval": 1,
+      "longhaul_pop_or_xaz": 1,
+      "serverless_overhead": 0.6
+    },
+    "inference_compute_ms": {
+      "min": 8,
+      "typ": 16,
+      "max": 28
+    },
+    "costFlags": {
+      "needsHotStorage": true,
+      "strongCompliance": true,
+      "highEgress": true
+    },
+    "notes": "Bandwidth/egress heavy; sensitive to LB/TLS and longhaul."
+  },
+  {
+    "id": "ar-vr",
+    "name": "AR/VR",
+    "latencyWeights": {
+      "load_balancer": 1,
+      "tls_handshake": 0.8,
+      "ecs_eks_orchestration": 0.6,
+      "gpu_cold_start": 0.3,
+      "model_gpu_load": 0.9,
+      "queueing_multitenant": 0.7,
+      "noisy_neighbor": 0.7,
+      "data_retrieval": 0.5,
+      "longhaul_pop_or_xaz": 1,
+      "serverless_overhead": 0.5
+    },
+    "inference_compute_ms": {
+      "min": 6,
+      "typ": 12,
+      "max": 22
+    },
+    "costFlags": {
+      "needsHotStorage": false,
+      "strongCompliance": true,
+      "highEgress": true
+    },
+    "notes": "Ultra-low latency critical; GPU load sensitive."
+  },
+  {
+    "id": "batch",
+    "name": "Batch inference",
+    "latencyWeights": {
+      "load_balancer": 0.2,
+      "tls_handshake": 0.2,
+      "ecs_eks_orchestration": 0.4,
+      "gpu_cold_start": 0.8,
+      "model_gpu_load": 1,
+      "queueing_multitenant": 0.6,
+      "noisy_neighbor": 0.6,
+      "data_retrieval": 0.4,
+      "longhaul_pop_or_xaz": 0.3,
+      "serverless_overhead": 0.3
+    },
+    "inference_compute_ms": {
+      "min": 12,
+      "typ": 30,
+      "max": 120
+    },
+    "costFlags": {
+      "needsHotStorage": false,
+      "strongCompliance": false,
+      "highEgress": false
+    },
+    "notes": "Throughput over latency; cost-optimized."
+  },
+  {
+    "id": "real-time-chat",
+    "name": "Real-time chat/LLM",
+    "latencyWeights": {
+      "load_balancer": 0.8,
+      "tls_handshake": 0.9,
+      "ecs_eks_orchestration": 0.5,
+      "gpu_cold_start": 0.2,
+      "model_gpu_load": 0.8,
+      "queueing_multitenant": 0.9,
+      "noisy_neighbor": 0.8,
+      "data_retrieval": 0.3,
+      "longhaul_pop_or_xaz": 0.8,
+      "serverless_overhead": 0.4
+    },
+    "inference_compute_ms": {
+      "min": 50,
+      "typ": 200,
+      "max": 500
+    },
+    "costFlags": {
+      "needsHotStorage": false,
+      "strongCompliance": false,
+      "highEgress": false
+    },
+    "notes": "Interactive latency critical; token generation heavy."
+  },
+  {
+    "id": "autonomous-vehicle",
+    "name": "Autonomous vehicle",
+    "latencyWeights": {
+      "load_balancer": 0.9,
+      "tls_handshake": 0.7,
+      "ecs_eks_orchestration": 0.3,
+      "gpu_cold_start": 0.1,
+      "model_gpu_load": 0.9,
+      "queueing_multitenant": 0.5,
+      "noisy_neighbor": 0.4,
+      "data_retrieval": 0.2,
+      "longhaul_pop_or_xaz": 0.9,
+      "serverless_overhead": 0.2
+    },
+    "inference_compute_ms": {
+      "min": 5,
+      "typ": 15,
+      "max": 30
+    },
+    "costFlags": {
+      "needsHotStorage": false,
+      "strongCompliance": true,
+      "highEgress": false
+    },
+    "notes": "Safety-critical; ultra-low latency required."
+  },
+  {
+    "id": "gaming-render",
+    "name": "Gaming render farm",
+    "latencyWeights": {
+      "load_balancer": 0.6,
+      "tls_handshake": 0.4,
+      "ecs_eks_orchestration": 0.8,
+      "gpu_cold_start": 0.6,
+      "model_gpu_load": 1,
+      "queueing_multitenant": 0.7,
+      "noisy_neighbor": 0.8,
+      "data_retrieval": 0.6,
+      "longhaul_pop_or_xaz": 0.4,
+      "serverless_overhead": 0.5
+    },
+    "inference_compute_ms": {
+      "min": 100,
+      "typ": 500,
+      "max": 2000
+    },
+    "costFlags": {
+      "needsHotStorage": true,
+      "strongCompliance": false,
+      "highEgress": true
+    },
+    "notes": "GPU-intensive rendering; asset-heavy workloads."
+  }
+]
