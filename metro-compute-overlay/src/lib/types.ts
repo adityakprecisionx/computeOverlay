@@ -92,6 +92,14 @@ export interface AppState {
     threshold: number; // RTT threshold in ms
     radiusMultiplier: 1 | 2; // 1 = Conservative, 2 = Standard
   };
+  powerOverlay: {
+    enabled: boolean;
+    subLayers: {
+      transmission: boolean;
+      substations: boolean;
+      plants: boolean;
+    };
+  };
 }
 
 export interface MapState {

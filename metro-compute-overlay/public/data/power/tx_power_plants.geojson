@@ -1,0 +1,491 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7231,
+          32.2978
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-001",
+        "name": "Comanche Peak Nuclear Power Plant",
+        "capacity_mw": 2400,
+        "fuel_primary": "NUC",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.0833,
+          28.8
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-002",
+        "name": "South Texas Project Nuclear Power Plant",
+        "capacity_mw": 2560,
+        "fuel_primary": "NUC",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.7333,
+          32.2833
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-003",
+        "name": "Martin Lake Power Plant",
+        "capacity_mw": 2380,
+        "fuel_primary": "COL",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.25,
+          31.4167
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-004",
+        "name": "Limestone Power Plant",
+        "capacity_mw": 1700,
+        "fuel_primary": "COL",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.5167,
+          31.1167
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-005",
+        "name": "Oak Grove Power Plant",
+        "capacity_mw": 1600,
+        "fuel_primary": "COL",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.9167,
+          30.0167
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-006",
+        "name": "Fayette Power Project",
+        "capacity_mw": 1640,
+        "fuel_primary": "COL",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.2167,
+          28.7167
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-007",
+        "name": "Coleto Creek Power Station",
+        "capacity_mw": 600,
+        "fuel_primary": "COL",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.6333,
+          29.6167
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-008",
+        "name": "W.A. Parish Power Plant",
+        "capacity_mw": 3654,
+        "fuel_primary": "NG",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.9167,
+          29.8167
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-009",
+        "name": "Cedar Bayou Power Plant",
+        "capacity_mw": 1820,
+        "fuel_primary": "NG",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8333,
+          32.4167
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-010",
+        "name": "Wolf Hollow I Power Plant",
+        "capacity_mw": 750,
+        "fuel_primary": "NG",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.1167,
+          31.3167
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-011",
+        "name": "Sandy Creek Energy Station",
+        "capacity_mw": 1000,
+        "fuel_primary": "NG",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.3333,
+          31.0833
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-012",
+        "name": "Temple Power Plant",
+        "capacity_mw": 600,
+        "fuel_primary": "NG",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.1833,
+          32.75
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-013",
+        "name": "Handley Power Plant",
+        "capacity_mw": 1200,
+        "fuel_primary": "NG",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.8833,
+          32.7167
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-014",
+        "name": "Mountain Creek Power Plant",
+        "capacity_mw": 800,
+        "fuel_primary": "NG",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6667,
+          30.25
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-015",
+        "name": "Decker Creek Power Station",
+        "capacity_mw": 700,
+        "fuel_primary": "NG",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.5333,
+          32.45
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-016",
+        "name": "Roscoe Wind Farm",
+        "capacity_mw": 781,
+        "fuel_primary": "WND",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.2833,
+          32.1833
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-017",
+        "name": "Horse Hollow Wind Energy Center",
+        "capacity_mw": 735,
+        "fuel_primary": "WND",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.6333,
+          32.2833
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-018",
+        "name": "Capricorn Ridge Wind Farm",
+        "capacity_mw": 662,
+        "fuel_primary": "WND",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.4,
+          32.4667
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-019",
+        "name": "Sweetwater Wind Farm",
+        "capacity_mw": 585,
+        "fuel_primary": "WND",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.8333,
+          31.8833
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-020",
+        "name": "Desert Sky Wind Farm",
+        "capacity_mw": 160,
+        "fuel_primary": "WND",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.6167,
+          30.7167
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-021",
+        "name": "King Mountain Wind Farm",
+        "capacity_mw": 278,
+        "fuel_primary": "WND",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.8167,
+          32.2833
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-022",
+        "name": "Buffalo Gap Wind Farm",
+        "capacity_mw": 523,
+        "fuel_primary": "WND",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.4167,
+          28.0167
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-023",
+        "name": "Papalote Creek Wind Farm",
+        "capacity_mw": 380,
+        "fuel_primary": "WND",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.2167,
+          31.2167
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-024",
+        "name": "Upton 2 Solar Farm",
+        "capacity_mw": 180,
+        "fuel_primary": "SOL",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.5,
+          31.45
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-025",
+        "name": "Roadrunner Solar Project",
+        "capacity_mw": 497,
+        "fuel_primary": "SOL",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.9167,
+          31.1833
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-026",
+        "name": "Roserock Solar Farm",
+        "capacity_mw": 280,
+        "fuel_primary": "SOL",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.5,
+          29.4
+        ]
+      },
+      "properties": {
+        "plant_id": "plant-027",
+        "name": "Alamo 6 Solar Project",
+        "capacity_mw": 110,
+        "fuel_primary": "SOL",
+        "status": "operating",
+        "ercot_zone": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -96.797,
+            32.7767
+          ],
+          [
+            -96.5,
+            32.0
+          ],
+          [
+            -96.0,
+            31.0
+          ],
+          [
+            -95.5,
+            30.0
+          ],
+          [
+            -95.3698,
+            29.7604
+          ]
+        ]
+      },
+      "properties": {
+        "id": "tx-line-001",
+        "name": "DFW-Houston 345kV Intertie",
+        "voltage_kv": 345,
+        "status": "existing",
+        "owner": "ERCOT",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -101.8333,
+            31.8833
+          ],
+          [
+            -100.5333,
+            32.45
+          ],
+          [
+            -100.2833,
+            32.1833
+          ],
+          [
+            -99.7333,
+            32.45
+          ]
+        ]
+      },
+      "properties": {
+        "id": "tx-line-002",
+        "name": "West Texas 345kV Loop",
+        "voltage_kv": 345,
+        "status": "existing",
+        "owner": "Oncor",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.4936,
+            29.4241
+          ],
+          [
+            -98.3,
+            29.5
+          ],
+          [
+            -98.2,
+            29.4
+          ],
+          [
+            -98.4,
+            29.3
+          ],
+          [
+            -98.4936,
+            29.4241
+          ]
+        ]
+      },
+      "properties": {
+        "id": "tx-line-003",
+        "name": "San Antonio 138kV Ring",
+        "voltage_kv": 138,
+        "status": "existing",
+        "owner": "CPS Energy",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -97.7431,
+            30.2672
+          ],
+          [
+            -97.8,
+            30.4
+          ],
+          [
+            -97.85,
+            30.55
+          ]
+        ]
+      },
+      "properties": {
+        "id": "tx-line-004",
+        "name": "Austin 138kV North",
+        "voltage_kv": 138,
+        "status": "existing",
+        "owner": "Austin Energy",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -95.3698,
+            29.7604
+          ],
+          [
+            -95.4619,
+            29.4241
+          ],
+          [
+            -95.563,
+            29.21
+          ]
+        ]
+      },
+      "properties": {
+        "id": "tx-line-005",
+        "name": "Houston 345kV East-West",
+        "voltage_kv": 345,
+        "status": "existing",
+        "owner": "CenterPoint Energy",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -96.797,
+            32.7767
+          ],
+          [
+            -97.033,
+            32.8998
+          ],
+          [
+            -97.204,
+            33.014
+          ]
+        ]
+      },
+      "properties": {
+        "id": "tx-line-006",
+        "name": "DFW 345kV North-South",
+        "voltage_kv": 345,
+        "status": "existing",
+        "owner": "Oncor",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -95.3698,
+            29.7604
+          ],
+          [
+            -94.9167,
+            29.8167
+          ],
+          [
+            -94.7333,
+            30.0
+          ]
+        ]
+      },
+      "properties": {
+        "id": "tx-line-007",
+        "name": "Gulf Coast 345kV Corridor",
+        "voltage_kv": 345,
+        "status": "existing",
+        "owner": "CenterPoint Energy",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -100.5333,
+            32.45
+          ],
+          [
+            -100.2833,
+            32.1833
+          ],
+          [
+            -100.6333,
+            32.2833
+          ]
+        ]
+      },
+      "properties": {
+        "id": "tx-line-008",
+        "name": "West Texas Wind 345kV",
+        "voltage_kv": 345,
+        "status": "existing",
+        "owner": "Oncor",
+        "ercot_zone": null
+      }
+    }
+  ]
+}

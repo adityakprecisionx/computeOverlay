@@ -7,6 +7,8 @@ import { useAppStore } from '@/lib/store';
 import { MAPBOX_CONFIG } from '@/lib/constants';
 import { createLatencyRadiusFeatures, createLatencyRingFeatures } from '@/lib/latency-radius';
 import LatencyRingToggle from './LatencyRingToggle';
+import PowerOverlayControls from './PowerOverlayControls';
+import { registerPowerLayers, unregisterPowerLayers, setPowerLayerVisibility, fitToTexasBounds } from '@/lib/power/PowerOverlay';
 
 import type { Node } from '@/lib/types';
 
@@ -41,6 +43,7 @@ export default function MapCanvas({ onNodeClick, onMapClick, isPlacingGridSite, 
     setMapState,
     toggleNodeSelection,
     latencyRingMode,
+    powerOverlay,
     getFilteredNodes
   } = useAppStore();
   
@@ -124,6 +127,31 @@ export default function MapCanvas({ onNodeClick, onMapClick, isPlacingGridSite, 
       }
     };
   }, [mapState.center, mapState.zoom, setMapState]);
+
+  // Handle map state changes (e.g., from location search)
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+
+    const currentCenter = map.current.getCenter().toArray() as [number, number];
+    const currentZoom = map.current.getZoom();
+    
+    // Check if we need to fly to a new location
+    const centerChanged = 
+      Math.abs(currentCenter[0] - mapState.center[0]) > 0.001 ||
+      Math.abs(currentCenter[1] - mapState.center[1]) > 0.001;
+    const zoomChanged = Math.abs(currentZoom - mapState.zoom) > 0.1;
+
+    if (centerChanged || zoomChanged) {
+      map.current.flyTo({
+        center: mapState.center,
+        zoom: mapState.zoom,
+        bearing: mapState.bearing,
+        pitch: mapState.pitch,
+        duration: 2000, // 2 second animation
+        essential: true
+      });
+    }
+  }, [mapState, mapLoaded]);
 
   // Add click handler for setting point of use or GridSite
   useEffect(() => {
@@ -417,6 +445,31 @@ export default function MapCanvas({ onNodeClick, onMapClick, isPlacingGridSite, 
     }
   }, [pointOfUse, mapLoaded, forceNodeReload]);
 
+  // Handle power overlay
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+    if (!map.current.isStyleLoaded()) return;
+
+    if (powerOverlay.enabled) {
+      // Register power layers
+      registerPowerLayers(map.current);
+      
+      // Set sub-layer visibility
+      setPowerLayerVisibility(map.current, 'transmission', powerOverlay.subLayers.transmission);
+      setPowerLayerVisibility(map.current, 'substations', powerOverlay.subLayers.substations);
+      setPowerLayerVisibility(map.current, 'plants', powerOverlay.subLayers.plants);
+
+      // Optional: Fit to Texas bounds if map is zoomed out too far
+      const currentZoom = map.current.getZoom();
+      if (currentZoom < 6) {
+        fitToTexasBounds(map.current);
+      }
+    } else {
+      // Unregister power layers when disabled
+      unregisterPowerLayers(map.current);
+    }
+  }, [mapLoaded, powerOverlay]);
+
   // Handle drawing mode
   useEffect(() => {
     if (!map.current || !mapLoaded || !isDrawingMode) return;
@@ -670,6 +723,9 @@ export default function MapCanvas({ onNodeClick, onMapClick, isPlacingGridSite, 
       
       {/* Latency Ring Toggle */}
       <LatencyRingToggle />
+      
+      {/* Power Overlay Controls */}
+      <PowerOverlayControls />
       
       {/* Floating controls */}
       <div className="absolute left-4 top-1/2 transform -translate-y-1/2 flex flex-col gap-2 z-10">

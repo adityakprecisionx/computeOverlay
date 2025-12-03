@@ -1,0 +1,203 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.797,
+          32.7767
+        ]
+      },
+      "properties": {
+        "id": "sub-001",
+        "name": "DFW Transmission Substation",
+        "type": "transmission",
+        "voltage_kv": 345,
+        "owner": "Oncor",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.3698,
+          29.7604
+        ]
+      },
+      "properties": {
+        "id": "sub-002",
+        "name": "Houston Central Substation",
+        "type": "transmission",
+        "voltage_kv": 345,
+        "owner": "CenterPoint Energy",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.4936,
+          29.4241
+        ]
+      },
+      "properties": {
+        "id": "sub-003",
+        "name": "San Antonio Switching Station",
+        "type": "switching",
+        "voltage_kv": 138,
+        "owner": "CPS Energy",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7431,
+          30.2672
+        ]
+      },
+      "properties": {
+        "id": "sub-004",
+        "name": "Austin Transmission Hub",
+        "type": "transmission",
+        "voltage_kv": 138,
+        "owner": "Austin Energy",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.033,
+          32.8998
+        ]
+      },
+      "properties": {
+        "id": "sub-005",
+        "name": "Fort Worth North Substation",
+        "type": "transmission",
+        "voltage_kv": 345,
+        "owner": "Oncor",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.4619,
+          29.4241
+        ]
+      },
+      "properties": {
+        "id": "sub-006",
+        "name": "Houston East Substation",
+        "type": "transmission",
+        "voltage_kv": 138,
+        "owner": "CenterPoint Energy",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.8333,
+          31.8833
+        ]
+      },
+      "properties": {
+        "id": "sub-007",
+        "name": "West Texas Switching Station",
+        "type": "switching",
+        "voltage_kv": 345,
+        "owner": "Oncor",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.7333,
+          32.45
+        ]
+      },
+      "properties": {
+        "id": "sub-008",
+        "name": "Abilene Transmission Substation",
+        "type": "transmission",
+        "voltage_kv": 138,
+        "owner": "Oncor",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.9167,
+          29.8167
+        ]
+      },
+      "properties": {
+        "id": "sub-009",
+        "name": "Baytown Substation",
+        "type": "transmission",
+        "voltage_kv": 345,
+        "owner": "CenterPoint Energy",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7231,
+          32.2978
+        ]
+      },
+      "properties": {
+        "id": "sub-010",
+        "name": "Glen Rose Substation",
+        "type": "transmission",
+        "voltage_kv": 345,
+        "owner": "Luminant",
+        "ercot_zone": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.7333,
+          32.2833
+        ]
+      },
+      "properties": {
+        "id": "sub-011",
+        "name": "Tatum Substation",
+        "type": "transmission",
+        "voltage_kv": 345,
+        "owner": "Luminant",
+        "ercot_zone": null
+      }
+    }
+  ]
+}

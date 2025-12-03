@@ -7,6 +7,7 @@ import MapCanvas from '@/components/MapCanvas';
 import LeftDrawer from '@/components/LeftDrawer';
 import CompareModal from '@/components/CompareModal';
 import ShareButton from '@/components/ShareButton';
+import LocationSearch from '@/components/LocationSearch';
 
 import { Menu, Plus, Trash2, MapPin } from 'lucide-react';
 import type { Node } from '@/lib/types';
@@ -22,6 +23,7 @@ export default function Home() {
   const [showLatencyModal, setShowLatencyModal] = useState(false);
   const [radiusMultiplier, setRadiusMultiplier] = useState<1 | 2>(1); // 1 = current, 2 = doubled
   const [calculateOnlyMode, setCalculateOnlyMode] = useState(false);
+  const [fillRegionLocation, setFillRegionLocation] = useState<{ lat: number; lon: number; address: string; bbox?: [number, number, number, number] } | null>(null);
   
   const {
     compareMode,
@@ -134,8 +136,11 @@ export default function Home() {
     if (useCustomShape && drawnPolygon) {
       // Use custom drawn polygon
       bounds = getPolygonBounds(drawnPolygon);
+    } else if (fillRegionLocation) {
+      // Use selected location bounds
+      bounds = getLocationBounds(fillRegionLocation);
     } else {
-      // Use Dallas-Fort Worth area bounds (adjusted to cover more Fort Worth)
+      // Use Dallas-Fort Worth area bounds (adjusted to cover more Fort Worth) as fallback
       bounds = {
         north: 33.3,
         south: 32.6,
@@ -216,6 +221,57 @@ export default function Home() {
     return baseRadius * multiplier;
   };
 
+  // Get bounds for a location. Prefer precise bbox from Mapbox; fallback to heuristic area.
+  const getLocationBounds = (location: { lat: number; lon: number; address: string; bbox?: [number, number, number, number] }) => {
+    // If Mapbox provided a bbox: [west, south, east, north], use it directly
+    if (location.bbox && location.bbox.length === 4) {
+      const [west, south, east, north] = location.bbox;
+      return { north, south, east, west };
+    }
+    // Determine bounds based on location type and size
+    const address = location.address.toLowerCase();
+    
+    const isCountry = address.includes('country') || address.includes('nation') || 
+                      address.includes('republic') || address.includes('kingdom');
+    
+    const isState = address.includes('state') || address.includes('province') || 
+                    address.includes('region') || address.includes('county');
+    
+    const isCity = !isCountry && !isState && (
+      address.includes('city') || address.includes('town') || 
+      address.includes('municipality') || address.includes('metro')
+    );
+
+    let latRange, lonRange;
+    
+    if (isCountry) {
+      // For countries, use a large area (roughly 5-10 degrees)
+      // Adjust based on latitude for better coverage
+      const latAdjustment = Math.abs(location.lat) > 60 ? 1.5 : 1.0; // Polar regions need more coverage
+      latRange = 5.0 * latAdjustment;
+      lonRange = 10.0 * latAdjustment;
+    } else if (isState) {
+      // For states/provinces, use a medium area (roughly 2-4 degrees)
+      latRange = 2.5;
+      lonRange = 4.0;
+    } else if (isCity) {
+      // For cities, use a smaller area (roughly 0.5-1.5 degrees)
+      latRange = 0.8;
+      lonRange = 1.2;
+    } else {
+      // Default for other locations (neighborhoods, districts, etc.)
+      latRange = 0.4;
+      lonRange = 0.6;
+    }
+
+    return {
+      north: location.lat + latRange / 2,
+      south: location.lat - latRange / 2,
+      east: location.lon + lonRange / 2,
+      west: location.lon - lonRange / 2
+    };
+  };
+
   const handleDeleteAllGridSites = () => {
     // Remove all user-created gridsites
     userGridSites.forEach(site => removeUserGridSite(site.id));
@@ -288,6 +344,14 @@ export default function Home() {
         </div>
         
         <div className="flex items-center gap-3">
+          <div className="w-80">
+            <LocationSearch 
+              placeholder="Search for any city, state, or country..."
+              onLocationSelect={(location) => {
+                console.log('Location selected:', location);
+              }}
+            />
+          </div>
           <ShareButton />
         </div>
       </div>
@@ -442,7 +506,29 @@ export default function Home() {
               
               <div className="text-center text-gray-500 text-sm">OR</div>
               
-              <div className="text-sm font-medium text-gray-700">Fill entire Dallas area:</div>
+              <div className="space-y-3">
+                <div className="text-sm font-medium text-gray-700">Fill area by location:</div>
+                <LocationSearch
+                  placeholder="Search for a city, state, or country..."
+                  onLocationSelect={(location) => {
+                    setFillRegionLocation(location);
+                  }}
+                  className="w-full"
+                />
+                {fillRegionLocation && (
+                  <div className="p-3 bg-green-50 border border-green-200 rounded-lg">
+                    <div className="text-sm font-medium text-green-800">✅ Location Selected</div>
+                    <div className="text-sm text-green-700">{fillRegionLocation.address}</div>
+                    <div className="text-xs text-green-600">
+                      {fillRegionLocation.lat.toFixed(4)}, {fillRegionLocation.lon.toFixed(4)}
+                    </div>
+                  </div>
+                )}
+              </div>
+              
+              <div className="text-center text-gray-500 text-sm">OR</div>
+              
+              <div className="text-sm font-medium text-gray-700">Fill entire Dallas area (default):</div>
             </div>
             
             {/* Radius Configuration Selector */}
@@ -499,6 +585,11 @@ export default function Home() {
                 <div className="text-sm text-green-600">
                   ~{getRadiusForLatency(5).toFixed(1)}km radius - {radiusMultiplier === 1 ? 'High' : 'Medium'} density
                 </div>
+                {fillRegionLocation && (
+                  <div className="text-xs text-green-500 mt-1">
+                    Area: {fillRegionLocation.address}
+                  </div>
+                )}
               </button>
               
               <button
@@ -509,6 +600,11 @@ export default function Home() {
                 <div className="text-sm text-yellow-600">
                   ~{getRadiusForLatency(10).toFixed(1)}km radius - {radiusMultiplier === 1 ? 'Medium' : 'Low'} density
                 </div>
+                {fillRegionLocation && (
+                  <div className="text-xs text-yellow-500 mt-1">
+                    Area: {fillRegionLocation.address}
+                  </div>
+                )}
               </button>
               
               <button
@@ -519,6 +615,11 @@ export default function Home() {
                 <div className="text-sm text-orange-600">
                   ~{getRadiusForLatency(15).toFixed(1)}km radius - {radiusMultiplier === 1 ? 'Low' : 'Very low'} density
                 </div>
+                {fillRegionLocation && (
+                  <div className="text-xs text-orange-500 mt-1">
+                    Area: {fillRegionLocation.address}
+                  </div>
+                )}
               </button>
               
               <button
@@ -529,12 +630,20 @@ export default function Home() {
                 <div className="text-sm text-red-600">
                   ~{getRadiusForLatency(20).toFixed(1)}km radius - Very low density
                 </div>
+                {fillRegionLocation && (
+                  <div className="text-xs text-red-500 mt-1">
+                    Area: {fillRegionLocation.address}
+                  </div>
+                )}
               </button>
             </div>
             
             <div className="flex gap-3 mt-6">
               <button
-                onClick={() => setShowFillRegionModal(false)}
+                onClick={() => {
+                  setShowFillRegionModal(false);
+                  setFillRegionLocation(null);
+                }}
                 className="flex-1 px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-lg transition-colors"
               >
                 Cancel
@@ -645,6 +754,7 @@ export default function Home() {
                 onClick={() => {
                   setShowLatencyModal(false);
                   setDrawnPolygon(null);
+                  setFillRegionLocation(null);
                 }}
                 className="flex-1 px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-lg transition-colors"
               >

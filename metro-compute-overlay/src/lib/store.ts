@@ -23,6 +23,7 @@ interface AppStore extends AppState {
   setCompareMode: (mode: boolean) => void;
   setMapState: (state: Partial<MapState>) => void;
   setLatencyRingMode: (mode: { enabled: boolean; threshold: number; radiusMultiplier?: 1 | 2 }) => void;
+  setPowerOverlay: (overlay: { enabled: boolean; subLayers?: Partial<{ transmission: boolean; substations: boolean; plants: boolean }> }) => void;
   
   // Computed values
   getSelectedNodes: () => Node[];
@@ -52,6 +53,14 @@ export const useAppStore = create<AppStore>()(
         enabled: false,
         threshold: 10, // Default to 10ms
         radiusMultiplier: 1 // Default to Conservative
+      },
+      powerOverlay: {
+        enabled: false,
+        subLayers: {
+          transmission: true,
+          substations: true,
+          plants: true,
+        },
       },
       mapState: {
         center: [-96.7970, 32.7767], // DFW center
@@ -98,6 +107,16 @@ export const useAppStore = create<AppStore>()(
           ...mode,
           radiusMultiplier: mode.radiusMultiplier ?? state.latencyRingMode.radiusMultiplier
         } 
+      })),
+
+      setPowerOverlay: (overlay) => set((state) => ({
+        powerOverlay: {
+          ...state.powerOverlay,
+          enabled: overlay.enabled,
+          subLayers: overlay.subLayers
+            ? { ...state.powerOverlay.subLayers, ...overlay.subLayers }
+            : state.powerOverlay.subLayers,
+        },
       })),
 
       // Computed values
@@ -152,7 +171,8 @@ export const useAppStore = create<AppStore>()(
         userGridSites: state.userGridSites,
         compareMode: state.compareMode,
         mapState: state.mapState,
-        latencyRingMode: state.latencyRingMode
+        latencyRingMode: state.latencyRingMode,
+        powerOverlay: state.powerOverlay
       })
     }
   )

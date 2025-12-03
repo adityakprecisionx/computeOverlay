@@ -7,6 +7,7 @@ import { MapPin, Filter, Settings, BarChart3, X, Cloud } from 'lucide-react';
 import type { Node, Workload, NodeType, VacancyLevel } from '@/lib/types';
 import { calcCloudLatency } from '@/lib/latency';
 import { calculateDistance } from '@/lib/distance';
+import LocationSearch from './LocationSearch';
 
 interface LeftDrawerProps {
   isOpen: boolean;
@@ -39,14 +40,8 @@ export default function LeftDrawer({ isOpen, onClose, isPlacingPointOfUse, setIs
   const filteredNodes = getFilteredNodes();
   const offMapNodes = getOffMapNodes();
 
-  const handleAddressSubmit = (address: string) => {
-    // In a real app, you'd use Mapbox Geocoding API here
-    // For now, we'll use a simple mock
-    const mockCoords = { lat: 32.7767, lon: -96.7970 }; // Dallas
-    setPointOfUse({
-      ...mockCoords,
-      address
-    });
+  const handleLocationSelect = (location: { lat: number; lon: number; address: string }) => {
+    setPointOfUse(location);
   };
 
   const handleMapClick = () => {
@@ -100,7 +95,7 @@ export default function LeftDrawer({ isOpen, onClose, isPlacingPointOfUse, setIs
         {activeTab === 'location' && (
           <LocationTab
             pointOfUse={pointOfUse}
-            onAddressSubmit={handleAddressSubmit}
+            onLocationSelect={handleLocationSelect}
             onMapClick={handleMapClick}
             isPlacingPointOfUse={isPlacingPointOfUse}
           />
@@ -145,24 +140,15 @@ export default function LeftDrawer({ isOpen, onClose, isPlacingPointOfUse, setIs
 // Location Tab Component
 function LocationTab({ 
   pointOfUse, 
-  onAddressSubmit, 
+  onLocationSelect, 
   onMapClick,
   isPlacingPointOfUse
 }: {
   pointOfUse: { lat: number; lon: number; address: string } | null;
-  onAddressSubmit: (address: string) => void;
+  onLocationSelect: (location: { lat: number; lon: number; address: string }) => void;
   onMapClick: () => void;
   isPlacingPointOfUse: boolean;
 }) {
-  const [address, setAddress] = useState('');
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (address.trim()) {
-      onAddressSubmit(address.trim());
-    }
-  };
-
   return (
     <div className="p-4 space-y-4">
       <div>
@@ -172,26 +158,18 @@ function LocationTab({
         </p>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-3">
+      <div className="space-y-3">
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Address
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Search Location
           </label>
-          <input
-            type="text"
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
-            placeholder="Enter address or coordinates"
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          <LocationSearch
+            placeholder="Search for a city, state, or country..."
+            onLocationSelect={onLocationSelect}
+            className="w-full"
           />
         </div>
-        <button
-          type="submit"
-          className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
-        >
-          Set Location
-        </button>
-      </form>
+      </div>
 
       <div className="text-center">
         <span className="text-sm text-gray-500">or</span>

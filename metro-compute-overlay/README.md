@@ -10,6 +10,7 @@ A Next.js 14 application for comparing cloud, colo data centers, and GridSite co
 - **Workload Profiles**: Pre-configured workload types (4K streaming, AR/VR, batch inference, etc.)
 - **Node Filtering**: Filter by type, operator, and vacancy levels
 - **GridSite Placement**: Add and configure hypothetical GridSite containers
+- **Power Overlay (TX)**: Texas power infrastructure visualization (transmission lines, substations, power plants)
 - **Shareable URLs**: Deep links that preserve application state
 - **Responsive Design**: Works on desktop and mobile devices
 
@@ -100,6 +101,22 @@ A Next.js 14 application for comparing cloud, colo data centers, and GridSite co
 1. Click the "Share" button in the top right
 2. The current view URL will be copied to your clipboard
 3. Share the URL to preserve the exact state
+
+### Power Overlay (Texas)
+1. Toggle the "Power (TX)" overlay in the control panel (top-right of map)
+2. Expand the panel to see sub-layer toggles:
+   - **Transmission (138/345 kV)**: Bulk power transmission lines
+   - **Substations**: Transmission and switching substations
+   - **Plants**: Power generation facilities (≥ 1 MW)
+3. Click on substations or power plants to see detailed information
+4. The overlay automatically fits to Texas bounds when enabled
+
+**Data Refresh**: To update power infrastructure data, run:
+```bash
+python3 scripts/fetch-power-data-enhanced.py
+```
+
+See `docs/power-overlay-tx.md` for detailed documentation.
 
 ## Data Sources
 
