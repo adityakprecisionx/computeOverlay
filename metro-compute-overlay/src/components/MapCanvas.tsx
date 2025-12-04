@@ -6,9 +6,8 @@ import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import { useAppStore } from '@/lib/store';
 import { MAPBOX_CONFIG } from '@/lib/constants';
 import { createLatencyRadiusFeatures, createLatencyRingFeatures } from '@/lib/latency-radius';
-import LatencyRingToggle from './LatencyRingToggle';
 import PowerOverlayControls from './PowerOverlayControls';
-import { registerPowerLayers, unregisterPowerLayers, setPowerLayerVisibility, fitToTexasBounds } from '@/lib/power/PowerOverlay';
+import { registerPowerLayers, unregisterPowerLayers, setPowerLayerVisibility } from '@/lib/power/PowerOverlay';
 
 import type { Node } from '@/lib/types';
 
@@ -44,6 +43,7 @@ export default function MapCanvas({ onNodeClick, onMapClick, isPlacingGridSite, 
     toggleNodeSelection,
     latencyRingMode,
     powerOverlay,
+    showDataCenters,
     getFilteredNodes
   } = useAppStore();
   
@@ -356,16 +356,20 @@ export default function MapCanvas({ onNodeClick, onMapClick, isPlacingGridSite, 
       });
     }
 
-    // Control layer visibility based on latency ring mode
+    // Control layer visibility based on latency ring mode and showDataCenters toggle
     if (map.current.getLayer('nodes-circle')) {
       if (latencyRingMode.enabled) {
         // Hide node circles when showing latency rings
         map.current.setLayoutProperty('nodes-circle', 'visibility', 'none');
         map.current.setLayoutProperty('nodes-symbol', 'visibility', 'none');
-      } else {
-        // Show node circles when not in latency ring mode
+      } else if (showDataCenters) {
+        // Show nodes if toggle is enabled
         map.current.setLayoutProperty('nodes-circle', 'visibility', 'visible');
         map.current.setLayoutProperty('nodes-symbol', 'visibility', 'visible');
+      } else {
+        // Hide nodes if toggle is disabled
+        map.current.setLayoutProperty('nodes-circle', 'visibility', 'none');
+        map.current.setLayoutProperty('nodes-symbol', 'visibility', 'none');
       }
     }
 
@@ -403,6 +407,7 @@ export default function MapCanvas({ onNodeClick, onMapClick, isPlacingGridSite, 
     userGridSites, 
     mapLoaded, 
     handleNodeClickCallback,
+    showDataCenters,
     isPlacingGridSite, 
     isPlacingPointOfUse,
     isDeleteMode,
@@ -445,30 +450,63 @@ export default function MapCanvas({ onNodeClick, onMapClick, isPlacingGridSite, 
     }
   }, [pointOfUse, mapLoaded, forceNodeReload]);
 
-  // Handle power overlay
+  // Handle power overlay - consolidated logic for registration, visibility, and persistence
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
-    if (!map.current.isStyleLoaded()) return;
-
-    if (powerOverlay.enabled) {
-      // Register power layers
-      registerPowerLayers(map.current);
+    
+    // Wait for style to be loaded
+    const ensureStyleAndRegister = () => {
+      if (!map.current) return;
       
-      // Set sub-layer visibility
-      setPowerLayerVisibility(map.current, 'transmission', powerOverlay.subLayers.transmission);
-      setPowerLayerVisibility(map.current, 'substations', powerOverlay.subLayers.substations);
-      setPowerLayerVisibility(map.current, 'plants', powerOverlay.subLayers.plants);
-
-      // Optional: Fit to Texas bounds if map is zoomed out too far
-      const currentZoom = map.current.getZoom();
-      if (currentZoom < 6) {
-        fitToTexasBounds(map.current);
+      if (!map.current.isStyleLoaded()) {
+        setTimeout(ensureStyleAndRegister, 100);
+        return;
       }
-    } else {
-      // Unregister power layers when disabled
-      unregisterPowerLayers(map.current);
+
+      if (powerOverlay.enabled) {
+        // Register power layers (they persist and won't be re-added if already exist)
+        registerPowerLayers(map.current);
+        
+        // Set sub-layer visibility based on toggles
+        setPowerLayerVisibility(map.current, 'transmission', powerOverlay.subLayers.transmission);
+        setPowerLayerVisibility(map.current, 'substations', powerOverlay.subLayers.substations);
+        setPowerLayerVisibility(map.current, 'plants', powerOverlay.subLayers.plants);
+      } else {
+        // Hide power layers when disabled (but keep them registered so they persist)
+        unregisterPowerLayers(map.current);
+      }
+    };
+
+    ensureStyleAndRegister();
+
+    // Set up event listeners to ensure layers stay visible during map movements
+    if (powerOverlay.enabled && map.current) {
+      const ensurePowerLayersVisible = () => {
+        if (!map.current || !map.current.isStyleLoaded()) return;
+        
+        // Ensure layers are registered
+        registerPowerLayers(map.current);
+        
+        // Ensure visibility matches current state
+        setPowerLayerVisibility(map.current, 'transmission', powerOverlay.subLayers.transmission);
+        setPowerLayerVisibility(map.current, 'substations', powerOverlay.subLayers.substations);
+        setPowerLayerVisibility(map.current, 'plants', powerOverlay.subLayers.plants);
+      };
+
+      // Listen for map movements and ensure layers stay visible
+      map.current.on('moveend', ensurePowerLayersVisible);
+      map.current.on('zoomend', ensurePowerLayersVisible);
+      map.current.on('idle', ensurePowerLayersVisible);
+
+      return () => {
+        if (map.current) {
+          map.current.off('moveend', ensurePowerLayersVisible);
+          map.current.off('zoomend', ensurePowerLayersVisible);
+          map.current.off('idle', ensurePowerLayersVisible);
+        }
+      };
     }
-  }, [mapLoaded, powerOverlay]);
+  }, [mapLoaded, powerOverlay.enabled, powerOverlay.subLayers.transmission, powerOverlay.subLayers.substations, powerOverlay.subLayers.plants]);
 
   // Handle drawing mode
   useEffect(() => {
@@ -721,10 +759,8 @@ export default function MapCanvas({ onNodeClick, onMapClick, isPlacingGridSite, 
     <div className="relative w-full h-full">
       <div ref={mapContainer} className="w-full h-full" />
       
-      {/* Latency Ring Toggle */}
-      <LatencyRingToggle />
-      
-      {/* Power Overlay Controls */}
+      {/* Power Overlay Controls - positioned to the left of latency toggle */}
+      {/* Unified Overlay Controls (Power, Data Centers, Latency Rings) */}
       <PowerOverlayControls />
       
       {/* Floating controls */}

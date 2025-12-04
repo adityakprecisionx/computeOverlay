@@ -7,7 +7,7 @@ import { Share2, Check } from 'lucide-react';
 
 export default function ShareButton() {
   const [copied, setCopied] = useState(false);
-  const { selectedNodes, pointOfUse, selectedWorkload, filters, userGridSites, compareMode, latencyRingMode, powerOverlay } = useAppStore();
+  const { selectedNodes, pointOfUse, selectedWorkload, filters, userGridSites, compareMode, latencyRingMode, powerOverlay, showDataCenters } = useAppStore();
 
   const handleShare = async () => {
     try {
@@ -19,7 +19,8 @@ export default function ShareButton() {
         userGridSites,
         compareMode,
         latencyRingMode,
-        powerOverlay
+        powerOverlay,
+        showDataCenters
       });
       
       setCopied(true);

@@ -17,9 +17,28 @@ This will generate updated GeoJSON files in `public/data/power/` with:
 
 ## Scripts
 
+### `fetch-transmission-arcgis.py` (Recommended for Transmission Lines)
+
+**Dedicated script to fetch real transmission line data from ArcGIS HIFLD service.**
+
+Fetches comprehensive transmission line data from the official U.S. Electric Power Transmission Lines dataset:
+- Source: [ArcGIS Online HIFLD](https://www.arcgis.com/home/item.html?id=d4090758322c4d32a4cd002ffaa0aa12)
+- Last Updated: 09/30/2024
+- Fetches 138kV and 345kV lines for Texas
+- Typically returns 5,000+ real transmission lines
+
+**Usage:**
+```bash
+python3 scripts/fetch-transmission-arcgis.py
+```
+
+**Output:** `public/data/power/tx_transmission_138_345.geojson`
+
 ### `fetch-power-data-enhanced.py` (Recommended)
 
 Enhanced script that generates real Texas power infrastructure data from verified public sources.
+
+**Note:** This script now automatically uses `fetch-transmission-arcgis.py` for transmission lines if available.
 
 **Features:**
 - 27 major power plants (nuclear, coal, natural gas, wind, solar)

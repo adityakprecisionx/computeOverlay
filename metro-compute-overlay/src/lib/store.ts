@@ -24,6 +24,7 @@ interface AppStore extends AppState {
   setMapState: (state: Partial<MapState>) => void;
   setLatencyRingMode: (mode: { enabled: boolean; threshold: number; radiusMultiplier?: 1 | 2 }) => void;
   setPowerOverlay: (overlay: { enabled: boolean; subLayers?: Partial<{ transmission: boolean; substations: boolean; plants: boolean }> }) => void;
+  setShowDataCenters: (show: boolean) => void;
   
   // Computed values
   getSelectedNodes: () => Node[];
@@ -62,6 +63,7 @@ export const useAppStore = create<AppStore>()(
           plants: true,
         },
       },
+      showDataCenters: true,
       mapState: {
         center: [-96.7970, 32.7767], // DFW center
         zoom: 9,
@@ -118,6 +120,8 @@ export const useAppStore = create<AppStore>()(
             : state.powerOverlay.subLayers,
         },
       })),
+      
+      setShowDataCenters: (show) => set({ showDataCenters: show }),
 
       // Computed values
       getSelectedNodes: () => {
@@ -172,7 +176,8 @@ export const useAppStore = create<AppStore>()(
         compareMode: state.compareMode,
         mapState: state.mapState,
         latencyRingMode: state.latencyRingMode,
-        powerOverlay: state.powerOverlay
+        powerOverlay: state.powerOverlay,
+        showDataCenters: state.showDataCenters
       })
     }
   )

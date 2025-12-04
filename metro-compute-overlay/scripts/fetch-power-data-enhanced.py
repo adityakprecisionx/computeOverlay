@@ -176,9 +176,45 @@ def fetch_power_plants():
     return geojson
 
 def fetch_transmission_lines():
-    """Generate transmission lines GeoJSON from real data"""
-    print("Generating transmission line data from real Texas infrastructure...")
+    """Fetch real transmission line data from ArcGIS HIFLD service"""
+    print("Fetching transmission line data from ArcGIS HIFLD service...")
+    print("Source: https://www.arcgis.com/home/item.html?id=d4090758322c4d32a4cd002ffaa0aa12")
     
+    # Try to use the dedicated ArcGIS fetcher script
+    import subprocess
+    import sys
+    
+    arcgis_script = Path(__file__).parent / 'fetch-transmission-arcgis.py'
+    if arcgis_script.exists():
+        try:
+            result = subprocess.run(
+                [sys.executable, str(arcgis_script)],
+                capture_output=True,
+                text=True,
+                timeout=300  # 5 minute timeout
+            )
+            if result.returncode == 0:
+                print(result.stdout)
+                # Read the generated file
+                output_file = DATA_DIR / 'tx_transmission_138_345.geojson'
+                if output_file.exists():
+                    with open(output_file, 'r') as f:
+                        geojson = json.load(f)
+                    print(f"✓ Successfully fetched {len(geojson['features'])} transmission lines from ArcGIS")
+                    return geojson
+            else:
+                print(f"Warning: ArcGIS script failed: {result.stderr}")
+                print("Falling back to known transmission lines...")
+        except subprocess.TimeoutExpired:
+            print("Warning: ArcGIS fetch timed out. Falling back to known transmission lines...")
+        except Exception as e:
+            print(f"Warning: Could not run ArcGIS script: {e}")
+            print("Falling back to known transmission lines...")
+    else:
+        print("Warning: ArcGIS fetcher script not found. Using known transmission lines...")
+    
+    # Fallback to known transmission lines
+    print("Using known transmission line data...")
     features = []
     for i, line in enumerate(REAL_TRANSMISSION_LINES):
         all_in_texas = all(is_in_texas(coord[0], coord[1]) for coord in line['coordinates'])

@@ -58,11 +58,17 @@ export const TEXAS_BOUNDS: [number, number, number, number] = [
  */
 export interface TransmissionLineProperties {
   id: string;
-  name?: string;
+  transmission_line_id?: string;
   voltage_kv: number; // e.g., 138, 345
-  status?: string;   // e.g., 'existing', 'planned'
+  voltage?: number;   // For display
+  status?: string;   // e.g., 'IN SERVICE', 'Not Available'
   owner?: string;
-  ercot_zone?: string; // e.g., 'NORTH', 'WEST', 'SOUTH', 'HOUSTON', etc.
+  type?: string;     // e.g., 'OVERHEAD', 'UNDERGROUND'
+  inferred?: string; // e.g., 'Yes', 'No'
+  substation_1?: string;
+  substation_2?: string;
+  naics_code?: string;
+  naics_desc?: string;
 }
 
 /**

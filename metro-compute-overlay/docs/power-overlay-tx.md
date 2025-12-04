@@ -155,14 +155,19 @@ public/
 
 ### Automated Script (Recommended)
 
-We provide a Python script to generate real Texas power infrastructure data:
+We provide Python scripts to generate real Texas power infrastructure data:
 
 ```bash
-# Run the enhanced data fetching script
+# Fetch real transmission lines from ArcGIS HIFLD (5,000+ lines)
+python3 scripts/fetch-transmission-arcgis.py
+
+# Or run the enhanced script (includes transmission lines + power plants + substations)
 python3 scripts/fetch-power-data-enhanced.py
 ```
 
-This script generates GeoJSON files with real power plants, transmission lines, and substations from verified public sources (EIA, ERCOT, utility records).
+**Transmission Lines:** The `fetch-transmission-arcgis.py` script fetches comprehensive transmission line data from the official [U.S. Electric Power Transmission Lines dataset](https://www.arcgis.com/home/item.html?id=d4090758322c4d32a4cd002ffaa0aa12) (ArcGIS HIFLD). This typically returns 5,000+ real 138kV and 345kV transmission lines for Texas.
+
+**Power Plants & Substations:** The enhanced script generates GeoJSON files with real power plants and substations from verified public sources (EIA, ERCOT, utility records).
 
 ### Manual Data Refresh
 

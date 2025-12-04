@@ -100,6 +100,7 @@ export interface AppState {
       plants: boolean;
     };
   };
+  showDataCenters: boolean;
 }
 
 export interface MapState {
